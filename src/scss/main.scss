@@ -1,3 +1,10 @@
-p {
-  color: red;
-}
+@import 'utilities/dance';
+@import 'utilities/type';
+
+@import 'components/announcement';
+@import 'components/confetti';
+@import 'components/container';
+@import 'components/header-dance';
+@import 'components/header';
+@import 'components/lateral-view';
+@import 'components/section-title';

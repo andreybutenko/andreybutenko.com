@@ -1,0 +1,66 @@
+header.header-dance {
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+
+  .container {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: transparent;
+  }
+  
+  img {
+    margin-bottom: -35px;
+  }
+  
+  .lateral-primary {
+    padding-bottom: 32px;
+    
+    p {
+      max-width: 600px;
+    }
+  }
+  
+  .lateral-secondary {
+    align-items: flex-end;
+    position: relative;
+  }
+
+  &.dance-started {
+    animation-name: party-colors;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+    .content {
+      animation-name: wavy-text;
+      animation-duration: 2000ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    
+    img {
+      animation-name: andrey-dance;
+      animation-duration: 2000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    
+    .splash-content {
+      background-color: transparent;
+    }
+  }
+
+  &.dance-not-started {
+    animation-name: header-slide-in;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
+    img {
+      animation-name: icon-slide-in;
+      animation-duration: 1000ms;
+      animation-fill-mode: forwards;
+    }
+  }
+}

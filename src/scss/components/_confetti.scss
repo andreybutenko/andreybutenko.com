@@ -1,0 +1,33 @@
+$confetti-colors: (#3498db, #e74c3c, #9b59b6, #f1c40f);
+
+@for $i from 0 through 50 {
+  $size: random(5) + 5;
+  $animation-duration: random() * 2s + 1s;
+  $animation-delay: random() * 1.5s;
+  $start-rotation: random(720) * 1deg;
+  $end-rotation: random(720) * 1deg;
+  $start-pos: (random(150) - 25) * 1%;
+  $end-pos: (random(150) - 25) * 1%;
+  
+  .confetti-#{$i} {
+    position: absolute;
+    top: -64px;
+    left: $start-pos;
+    background-color: nth($confetti-colors, random(4));
+    width: #{$size / 2}px;
+    height: #{$size}px;
+    transform: rotation($start-rotation);
+    animation-name: confetti-animation-#{$i};
+    animation-duration: $animation-duration;
+    animation-delay: $animation-delay;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes confetti-animation-#{$i} {
+    to {
+      top: calc(100% + 64px);
+      left: $end-pos;
+      transform: rotation($end-rotation);
+    }
+  }
+}

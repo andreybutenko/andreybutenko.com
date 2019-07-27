@@ -12,9 +12,11 @@ module.exports = function(config) {
       config.addShortcode(shortCodeName, shortcodes[shortCodeName]);
   });
 
-  config.addLayoutAlias('base', 'base.njk');
-  config.addLayoutAlias('project', 'project.njk');
+  config.addLayoutAlias('base', 'layouts/base.njk');
+  config.addLayoutAlias('home', 'layouts/home.njk');
+  config.addLayoutAlias('project', 'layouts/project.njk');
 
+  config.addPassthroughCopy('src/assets');
   // config.addPassthroughCopy('src/robots.txt');
 
   config.addCollection('projects', collection => {
@@ -27,14 +29,7 @@ module.exports = function(config) {
   return {
     dir: {
       input: 'src',
-      output: '_site',
-      includes: 'includes',
-      layouts: 'layouts',
-      data: 'data'
-    },
-    templateFormats: ['njk', 'md'],
-    htmlTemplateEngine: 'njk',
-    markdownTemplateEngine: 'njk',
-    passthroughFileCopy: true
+      output: '_site'
+    }
   };
 };

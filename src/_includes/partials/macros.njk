@@ -1,0 +1,21 @@
+{% macro generateHeader(headerTitle) %}
+  <header class="header-dance dance-not-started">
+    <div class="container lateral-view">
+      <div class="lateral-primary">
+        <h1>
+          {{ headerTitle }}
+        </h1>
+        {{ caller().split('----')[0] | safe }}
+      </div>
+      <div class="lateral-secondary">
+        {{ caller().split('----')[1] | safe }}
+      </div>
+    </div>
+  </header>
+{% endmacro %}
+
+{% macro generateAnnouncement(classes) %}
+  <div class="announcement {{ classes }}">
+    {{ caller() }}
+  </div>
+{% endmacro %}

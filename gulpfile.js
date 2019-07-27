@@ -6,7 +6,7 @@ gulp.task('sass', () => {
   return gulp.src('src/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('src/_includes/css/'));
+    .pipe(gulp.dest('src/assets/css/'));
 });
 
 gulp.task('sass:watch', () => {

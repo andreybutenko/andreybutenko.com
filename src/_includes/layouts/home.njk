@@ -1,0 +1,57 @@
+{% extends 'layouts/base.njk' %}
+
+{% import 'partials/macros.njk' as macros %}
+
+{% block content %}
+  {% call macros.generateHeader(pageTitle) %}
+    <p>
+      I am a front-end developer studying Informatics at the University of Washington. I am skilled in developing web apps with Vue and mobile apps with React Native.
+    </p>
+    <p>
+      Beyond code, I value understanding user needs and apply this understanding to create more useful and more compelling user experiences.
+    </p>
+    ----
+    <img src="/assets/andreyys.png" alt="Icon of Andrey" />
+  {% endcall %}
+
+  {% call macros.generateAnnouncement() %}
+    <p>
+      <b>I am looking for front-end development or technical project management internships for Summer 2020.</b>
+    </p>
+    <p>
+      My previous experiences are in front-end web and mobile development at fast-paced Seattle startups. I am based in Seattle but I am open to working anywhere.
+    </p>
+    <p>
+      Take a look at <a href="#projects">my projects</a> and <a href="https://andrey.ninja">my work experience</a> and feel free to get in touch: <a href="mailto:abutenko@uw.edu">abutenko<span class="at">@</span>uw.edu</a>
+    </p>
+  {% endcall %}
+
+  <h1 class="section-title">Section</h1>
+
+  <script>
+    const DEFAULT_IMG = '/assets/andreyys.png';
+    const DANCE_IMG = '/assets/andreyys-dance.png';
+    window.addEventListener('load', () => {
+      (new Image()).src= '/assets/andreyys-dance.png'; // preload
+      document.querySelector('header.header-dance img').addEventListener('mouseenter', () => {
+        document.querySelector('header.header-dance').classList.remove('dance-not-started');
+        document.querySelector('header.header-dance').classList.add('dance-started');
+        document.querySelector('header.header-dance img').src = DANCE_IMG;
+        
+        const container = document.querySelector('header.header-dance .lateral-secondary');
+        for(let i = 0; i < 50; i++) {
+          const confetti = document.createElement('div');
+          confetti.classList.add('confetti', `confetti-${i}`);
+          container.appendChild(confetti);
+        }
+      });
+      
+      document.querySelector('header.header-dance img').addEventListener('mouseleave', () => {
+        const container = document.querySelector('header.header-dance .lateral-secondary');
+        document.querySelector('header.header-dance img').src = DEFAULT_IMG;
+        document.querySelector('header.header-dance').classList.remove('dance-started')
+        document.querySelectorAll('.confetti').forEach(ele => container.removeChild(ele));
+      })
+    });
+  </script>
+{% endblock %}
