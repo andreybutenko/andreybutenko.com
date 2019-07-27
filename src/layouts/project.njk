@@ -1,0 +1,12 @@
+---
+layout: base
+---
+{{ title }}
+
+{{ timeframe }}
+
+{{ content | safe }}
+
+{% for link in links %}
+  {% projectLink link %}
+{% endfor %}

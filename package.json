@@ -1,0 +1,26 @@
+{
+  "name": "andreybutenko.com",
+  "version": "1.0.0",
+  "description": "Andrey's 2019 portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp sass & concurrently \"gulp sass:watch\" \"eleventy --serve\"",
+    "build": "gulp sass & eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreybutenko/andreybutenko.com.git"
+  },
+  "author": "Andrey Butenko",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/andreybutenko/andreybutenko.com/issues"
+  },
+  "homepage": "https://github.com/andreybutenko/andreybutenko.com#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.8.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
