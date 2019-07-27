@@ -18,12 +18,12 @@
   &.alt {
     flex-direction: row-reverse;
     
-    .content {
+    .lateral-primary {
       padding-right: 32px;
     }
   }
   
-  &:not(.alt) .content {
+  &:not(.alt) .lateral-primary {
     padding-left: 32px;
   }
   
@@ -58,6 +58,18 @@
       &:hover {
         background-color: #74b9ff;
       }
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    flex-direction: column-reverse;
+
+    &.alt .lateral-primary {
+      padding-right: 0;
+    }
+    
+    &:not(.alt) .lateral-primary {
+      padding-left: 0;
     }
   }
 }

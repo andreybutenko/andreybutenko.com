@@ -10,6 +10,10 @@ header.header-dance {
   
   img {
     margin-bottom: -35px;
+
+    @media screen and (max-width: 780px) {
+      margin-bottom: 0;
+    }
   }
   
   .lateral-primary {
