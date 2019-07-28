@@ -12,3 +12,12 @@ gulp.task('sass', () => {
 gulp.task('sass:watch', () => {
   gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
 });
+
+gulp.task('copyProjectAssets', () => {
+  return gulp.src('src/projects/*/*.{png,jpg,jpeg}')
+    .pipe(gulp.dest('_site/assets'));
+});
+
+gulp.task('copyProjectAssets:watch', () => {
+  gulp.watch('src/projects/*/*.{png,jpg,jpeg}', gulp.series('copyProjectAssets'));
+});

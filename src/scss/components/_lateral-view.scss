@@ -30,39 +30,12 @@
   .lateral-primary {
     flex: 1;
   }
-  
-  ul.links {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1.1em;
-    
-    a {
-      display: block;
-      color: #0984e3;
-      padding: 8px 16px;
-      border-radius: 8px;
-      margin-right: 8px;
-      font-size: 0.8em;
-      transition: 250ms color, 250ms background-color;
-      
-      &:hover {
-        color: #74b9ff;
-      }
-    }
-    
-    li.primary a {
-      background-color: #0984e3;
-      color: white;
-      text-decoration: none;
-      
-      &:hover {
-        background-color: #74b9ff;
-      }
-    }
-  }
 
   @media screen and (max-width: 780px) {
-    flex-direction: column-reverse;
+    &,
+    &.alt {
+      flex-direction: column;
+    }
 
     &.alt .lateral-primary {
       padding-right: 0;

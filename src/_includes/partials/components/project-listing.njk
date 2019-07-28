@@ -1,0 +1,27 @@
+
+{%- for project in collections.projects  %}
+  {%- if loop.index % 2 == 1 %}
+    <article class="lateral-view">
+  {%- else %}
+    <article class="lateral-view alt">
+  {%- endif %}
+    <header class="lateral-secondary">
+      <img src="/assets/{{ project.data.directory }}/{{ project.data.image }}" alt="{{ project.data.title }} icon" />
+    </header>
+    <div class="lateral-primary">
+      <h2>{{ project.data.title }}</h2>
+      <section>
+        {{ project.templateContent | getPreview | safe }}
+      </section>
+      <ul class="links-collection">
+        {% for link in project.data.links %}
+          <li>{% projectLink link %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </article>
+  {%- if loop.last %}
+  {%- else %}
+    <hr/>
+  {%- endif %}
+{%- endfor %}
