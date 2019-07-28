@@ -29,10 +29,10 @@
 @media screen and (max-width: 780px) {
   @keyframes icon-slide-in {
     0% {
-      transform: translateX(-150%);
+      transform: translateX(-150%) rotate(-45deg);
     }
     90% {
-      transform: translateX(10%);
+      transform: translateX(10%) rotate(15deg);
     }
     100% {
       transform: translateX(0%);

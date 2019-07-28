@@ -2,6 +2,12 @@ header.header-dance {
   background-color: white;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 
+  // In order to prevent horizontal scrolling due to confetti on mobile
+  @media screen and (max-width: 780px) {
+    position: relative;
+    overflow-x: hidden;
+  }
+
   .container {
     margin-top: 0;
     padding-top: 0;
@@ -13,6 +19,7 @@ header.header-dance {
 
     @media screen and (max-width: 780px) {
       margin-bottom: 0;
+      height: 150px;
     }
   }
   
@@ -27,6 +34,10 @@ header.header-dance {
   .lateral-secondary {
     align-items: flex-end;
     position: relative;
+
+    @media screen and (max-width: 780px) {
+      align-self: stretch;
+    }
   }
 
   &.dance-started {

@@ -42,29 +42,53 @@
   100% {
     background-color: #ff240088; } }
 
-@-webkit-keyframes andrey-dance {
-  0% {
-    transform: translateY(20px); }
-  25% {
-    transform: rotate(-15deg) translateX(-40px); }
-  50% {
-    transform: translateY(20px); }
-  75% {
-    transform: rotate(15deg) translateX(40px); }
-  100% {
-    transform: translateY(20px); } }
+@media screen and (max-width: 780px) {
+  @-webkit-keyframes andrey-dance {
+    0% {
+      transform: translateY(0px); }
+    25% {
+      transform: rotate(-15deg) translateX(-40px) translateY(-20px); }
+    50% {
+      transform: translateY(0px); }
+    75% {
+      transform: rotate(15deg) translateX(40px) translateY(-20px); }
+    100% {
+      transform: translateY(0px); } }
+  @keyframes andrey-dance {
+    0% {
+      transform: translateY(0px); }
+    25% {
+      transform: rotate(-15deg) translateX(-40px) translateY(-20px); }
+    50% {
+      transform: translateY(0px); }
+    75% {
+      transform: rotate(15deg) translateX(40px) translateY(-20px); }
+    100% {
+      transform: translateY(0px); } } }
 
-@keyframes andrey-dance {
-  0% {
-    transform: translateY(20px); }
-  25% {
-    transform: rotate(-15deg) translateX(-40px); }
-  50% {
-    transform: translateY(20px); }
-  75% {
-    transform: rotate(15deg) translateX(40px); }
-  100% {
-    transform: translateY(20px); } }
+@media screen and (min-width: 781px) {
+  @-webkit-keyframes andrey-dance {
+    0% {
+      transform: translateY(20px); }
+    25% {
+      transform: rotate(-15deg) translateX(-40px); }
+    50% {
+      transform: translateY(20px); }
+    75% {
+      transform: rotate(15deg) translateX(40px); }
+    100% {
+      transform: translateY(20px); } }
+  @keyframes andrey-dance {
+    0% {
+      transform: translateY(20px); }
+    25% {
+      transform: rotate(-15deg) translateX(-40px); }
+    50% {
+      transform: translateY(20px); }
+    75% {
+      transform: rotate(15deg) translateX(40px); }
+    100% {
+      transform: translateY(20px); } } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -90,1481 +114,1481 @@ h1, h2, h3, h4, h5, h6 {
 .confetti-0 {
   position: absolute;
   top: -64px;
-  left: 25%;
-  background-color: #f1c40f;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(417deg);
+  left: -10%;
+  background-color: #e74c3c;
+  width: 4px;
+  height: 8px;
+  transform: rotation(64deg);
   -webkit-animation-name: confetti-animation-0;
           animation-name: confetti-animation-0;
-  -webkit-animation-duration: 1.79509s;
-          animation-duration: 1.79509s;
-  -webkit-animation-delay: 1.45071s;
-          animation-delay: 1.45071s;
+  -webkit-animation-duration: 2.61168s;
+          animation-duration: 2.61168s;
+  -webkit-animation-delay: 0.12533s;
+          animation-delay: 0.12533s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-0 {
   to {
     top: calc(100% + 64px);
-    left: 88%;
-    transform: rotation(287deg); } }
+    left: 120%;
+    transform: rotation(413deg); } }
 
 @keyframes confetti-animation-0 {
   to {
     top: calc(100% + 64px);
-    left: 88%;
-    transform: rotation(287deg); } }
+    left: 120%;
+    transform: rotation(413deg); } }
 
 .confetti-1 {
   position: absolute;
   top: -64px;
-  left: -7%;
-  background-color: #e74c3c;
-  width: 3px;
-  height: 6px;
-  transform: rotation(623deg);
+  left: 97%;
+  background-color: #9b59b6;
+  width: 4.5px;
+  height: 9px;
+  transform: rotation(39deg);
   -webkit-animation-name: confetti-animation-1;
           animation-name: confetti-animation-1;
-  -webkit-animation-duration: 2.55344s;
-          animation-duration: 2.55344s;
-  -webkit-animation-delay: 0.11054s;
-          animation-delay: 0.11054s;
+  -webkit-animation-duration: 1.9355s;
+          animation-duration: 1.9355s;
+  -webkit-animation-delay: 0.48401s;
+          animation-delay: 0.48401s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-1 {
   to {
     top: calc(100% + 64px);
-    left: 106%;
-    transform: rotation(402deg); } }
+    left: -22%;
+    transform: rotation(144deg); } }
 
 @keyframes confetti-animation-1 {
   to {
     top: calc(100% + 64px);
-    left: 106%;
-    transform: rotation(402deg); } }
+    left: -22%;
+    transform: rotation(144deg); } }
 
 .confetti-2 {
   position: absolute;
   top: -64px;
-  left: 104%;
-  background-color: #3498db;
-  width: 3px;
-  height: 6px;
-  transform: rotation(369deg);
+  left: 96%;
+  background-color: #f1c40f;
+  width: 5px;
+  height: 10px;
+  transform: rotation(617deg);
   -webkit-animation-name: confetti-animation-2;
           animation-name: confetti-animation-2;
-  -webkit-animation-duration: 2.64253s;
-          animation-duration: 2.64253s;
-  -webkit-animation-delay: 0.88574s;
-          animation-delay: 0.88574s;
+  -webkit-animation-duration: 1.86623s;
+          animation-duration: 1.86623s;
+  -webkit-animation-delay: 0.55973s;
+          animation-delay: 0.55973s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-2 {
   to {
     top: calc(100% + 64px);
-    left: -1%;
-    transform: rotation(364deg); } }
+    left: 120%;
+    transform: rotation(413deg); } }
 
 @keyframes confetti-animation-2 {
   to {
     top: calc(100% + 64px);
-    left: -1%;
-    transform: rotation(364deg); } }
+    left: 120%;
+    transform: rotation(413deg); } }
 
 .confetti-3 {
   position: absolute;
   top: -64px;
-  left: 46%;
-  background-color: #f1c40f;
-  width: 4.5px;
-  height: 9px;
-  transform: rotation(48deg);
+  left: 38%;
+  background-color: #9b59b6;
+  width: 3px;
+  height: 6px;
+  transform: rotation(129deg);
   -webkit-animation-name: confetti-animation-3;
           animation-name: confetti-animation-3;
-  -webkit-animation-duration: 1.44211s;
-          animation-duration: 1.44211s;
-  -webkit-animation-delay: 0.7949s;
-          animation-delay: 0.7949s;
+  -webkit-animation-duration: 2.65654s;
+          animation-duration: 2.65654s;
+  -webkit-animation-delay: 0.16866s;
+          animation-delay: 0.16866s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-3 {
   to {
     top: calc(100% + 64px);
-    left: 65%;
-    transform: rotation(553deg); } }
+    left: 100%;
+    transform: rotation(603deg); } }
 
 @keyframes confetti-animation-3 {
   to {
     top: calc(100% + 64px);
-    left: 65%;
-    transform: rotation(553deg); } }
+    left: 100%;
+    transform: rotation(603deg); } }
 
 .confetti-4 {
   position: absolute;
   top: -64px;
-  left: 96%;
+  left: 121%;
   background-color: #9b59b6;
-  width: 3px;
-  height: 6px;
-  transform: rotation(541deg);
+  width: 5px;
+  height: 10px;
+  transform: rotation(197deg);
   -webkit-animation-name: confetti-animation-4;
           animation-name: confetti-animation-4;
-  -webkit-animation-duration: 1.91542s;
-          animation-duration: 1.91542s;
-  -webkit-animation-delay: 0.04449s;
-          animation-delay: 0.04449s;
+  -webkit-animation-duration: 2.55648s;
+          animation-duration: 2.55648s;
+  -webkit-animation-delay: 1.49654s;
+          animation-delay: 1.49654s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-4 {
   to {
     top: calc(100% + 64px);
-    left: 92%;
-    transform: rotation(276deg); } }
+    left: 7%;
+    transform: rotation(75deg); } }
 
 @keyframes confetti-animation-4 {
   to {
     top: calc(100% + 64px);
-    left: 92%;
-    transform: rotation(276deg); } }
+    left: 7%;
+    transform: rotation(75deg); } }
 
 .confetti-5 {
   position: absolute;
   top: -64px;
-  left: 78%;
+  left: 124%;
   background-color: #3498db;
-  width: 4px;
-  height: 8px;
-  transform: rotation(617deg);
+  width: 3.5px;
+  height: 7px;
+  transform: rotation(305deg);
   -webkit-animation-name: confetti-animation-5;
           animation-name: confetti-animation-5;
-  -webkit-animation-duration: 1.07815s;
-          animation-duration: 1.07815s;
-  -webkit-animation-delay: 0.31111s;
-          animation-delay: 0.31111s;
+  -webkit-animation-duration: 2.49103s;
+          animation-duration: 2.49103s;
+  -webkit-animation-delay: 0.04153s;
+          animation-delay: 0.04153s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-5 {
   to {
     top: calc(100% + 64px);
-    left: 83%;
-    transform: rotation(83deg); } }
+    left: 115%;
+    transform: rotation(125deg); } }
 
 @keyframes confetti-animation-5 {
   to {
     top: calc(100% + 64px);
-    left: 83%;
-    transform: rotation(83deg); } }
+    left: 115%;
+    transform: rotation(125deg); } }
 
 .confetti-6 {
   position: absolute;
   top: -64px;
-  left: 111%;
-  background-color: #9b59b6;
+  left: -1%;
+  background-color: #3498db;
   width: 4.5px;
   height: 9px;
-  transform: rotation(465deg);
+  transform: rotation(178deg);
   -webkit-animation-name: confetti-animation-6;
           animation-name: confetti-animation-6;
-  -webkit-animation-duration: 2.23034s;
-          animation-duration: 2.23034s;
-  -webkit-animation-delay: 0.79972s;
-          animation-delay: 0.79972s;
+  -webkit-animation-duration: 2.15309s;
+          animation-duration: 2.15309s;
+  -webkit-animation-delay: 0.53956s;
+          animation-delay: 0.53956s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-6 {
   to {
     top: calc(100% + 64px);
-    left: 51%;
-    transform: rotation(474deg); } }
+    left: 34%;
+    transform: rotation(86deg); } }
 
 @keyframes confetti-animation-6 {
   to {
     top: calc(100% + 64px);
-    left: 51%;
-    transform: rotation(474deg); } }
+    left: 34%;
+    transform: rotation(86deg); } }
 
 .confetti-7 {
   position: absolute;
   top: -64px;
-  left: -1%;
+  left: 40%;
   background-color: #e74c3c;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(703deg);
+  width: 4px;
+  height: 8px;
+  transform: rotation(611deg);
   -webkit-animation-name: confetti-animation-7;
           animation-name: confetti-animation-7;
-  -webkit-animation-duration: 1.28069s;
-          animation-duration: 1.28069s;
-  -webkit-animation-delay: 0.96322s;
-          animation-delay: 0.96322s;
+  -webkit-animation-duration: 2.8355s;
+          animation-duration: 2.8355s;
+  -webkit-animation-delay: 0.49593s;
+          animation-delay: 0.49593s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-7 {
   to {
     top: calc(100% + 64px);
-    left: 97%;
-    transform: rotation(138deg); } }
+    left: 22%;
+    transform: rotation(83deg); } }
 
 @keyframes confetti-animation-7 {
   to {
     top: calc(100% + 64px);
-    left: 97%;
-    transform: rotation(138deg); } }
+    left: 22%;
+    transform: rotation(83deg); } }
 
 .confetti-8 {
   position: absolute;
   top: -64px;
-  left: 48%;
-  background-color: #3498db;
+  left: 44%;
+  background-color: #9b59b6;
   width: 5px;
   height: 10px;
-  transform: rotation(681deg);
+  transform: rotation(353deg);
   -webkit-animation-name: confetti-animation-8;
           animation-name: confetti-animation-8;
-  -webkit-animation-duration: 1.20115s;
-          animation-duration: 1.20115s;
-  -webkit-animation-delay: 1.40853s;
-          animation-delay: 1.40853s;
+  -webkit-animation-duration: 2.66032s;
+          animation-duration: 2.66032s;
+  -webkit-animation-delay: 0.02675s;
+          animation-delay: 0.02675s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-8 {
   to {
     top: calc(100% + 64px);
-    left: 116%;
-    transform: rotation(635deg); } }
+    left: 3%;
+    transform: rotation(109deg); } }
 
 @keyframes confetti-animation-8 {
   to {
     top: calc(100% + 64px);
-    left: 116%;
-    transform: rotation(635deg); } }
+    left: 3%;
+    transform: rotation(109deg); } }
 
 .confetti-9 {
   position: absolute;
   top: -64px;
-  left: -16%;
+  left: 40%;
   background-color: #3498db;
   width: 4.5px;
   height: 9px;
-  transform: rotation(109deg);
+  transform: rotation(631deg);
   -webkit-animation-name: confetti-animation-9;
           animation-name: confetti-animation-9;
-  -webkit-animation-duration: 1.51599s;
-          animation-duration: 1.51599s;
-  -webkit-animation-delay: 1.07698s;
-          animation-delay: 1.07698s;
+  -webkit-animation-duration: 1.17315s;
+          animation-duration: 1.17315s;
+  -webkit-animation-delay: 1.16254s;
+          animation-delay: 1.16254s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-9 {
   to {
     top: calc(100% + 64px);
-    left: -10%;
-    transform: rotation(493deg); } }
+    left: -21%;
+    transform: rotation(251deg); } }
 
 @keyframes confetti-animation-9 {
   to {
     top: calc(100% + 64px);
-    left: -10%;
-    transform: rotation(493deg); } }
+    left: -21%;
+    transform: rotation(251deg); } }
 
 .confetti-10 {
   position: absolute;
   top: -64px;
   left: 40%;
-  background-color: #f1c40f;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(436deg);
+  background-color: #9b59b6;
+  width: 4px;
+  height: 8px;
+  transform: rotation(688deg);
   -webkit-animation-name: confetti-animation-10;
           animation-name: confetti-animation-10;
-  -webkit-animation-duration: 2.06918s;
-          animation-duration: 2.06918s;
-  -webkit-animation-delay: 0.69784s;
-          animation-delay: 0.69784s;
+  -webkit-animation-duration: 2.1169s;
+          animation-duration: 2.1169s;
+  -webkit-animation-delay: 1.41025s;
+          animation-delay: 1.41025s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-10 {
   to {
     top: calc(100% + 64px);
-    left: 114%;
-    transform: rotation(315deg); } }
+    left: 38%;
+    transform: rotation(407deg); } }
 
 @keyframes confetti-animation-10 {
   to {
     top: calc(100% + 64px);
-    left: 114%;
-    transform: rotation(315deg); } }
+    left: 38%;
+    transform: rotation(407deg); } }
 
 .confetti-11 {
   position: absolute;
   top: -64px;
-  left: 124%;
-  background-color: #f1c40f;
-  width: 3px;
-  height: 6px;
-  transform: rotation(12deg);
+  left: 67%;
+  background-color: #9b59b6;
+  width: 5px;
+  height: 10px;
+  transform: rotation(391deg);
   -webkit-animation-name: confetti-animation-11;
           animation-name: confetti-animation-11;
-  -webkit-animation-duration: 2.32816s;
-          animation-duration: 2.32816s;
-  -webkit-animation-delay: 1.0166s;
-          animation-delay: 1.0166s;
+  -webkit-animation-duration: 1.51433s;
+          animation-duration: 1.51433s;
+  -webkit-animation-delay: 0.52643s;
+          animation-delay: 0.52643s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-11 {
   to {
     top: calc(100% + 64px);
-    left: 64%;
-    transform: rotation(581deg); } }
+    left: 11%;
+    transform: rotation(678deg); } }
 
 @keyframes confetti-animation-11 {
   to {
     top: calc(100% + 64px);
-    left: 64%;
-    transform: rotation(581deg); } }
+    left: 11%;
+    transform: rotation(678deg); } }
 
 .confetti-12 {
-  position: absolute;
-  top: -64px;
-  left: 106%;
-  background-color: #f1c40f;
-  width: 3px;
-  height: 6px;
-  transform: rotation(241deg);
-  -webkit-animation-name: confetti-animation-12;
-          animation-name: confetti-animation-12;
-  -webkit-animation-duration: 2.51703s;
-          animation-duration: 2.51703s;
-  -webkit-animation-delay: 0.19222s;
-          animation-delay: 0.19222s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-@-webkit-keyframes confetti-animation-12 {
-  to {
-    top: calc(100% + 64px);
-    left: 67%;
-    transform: rotation(654deg); } }
-
-@keyframes confetti-animation-12 {
-  to {
-    top: calc(100% + 64px);
-    left: 67%;
-    transform: rotation(654deg); } }
-
-.confetti-13 {
-  position: absolute;
-  top: -64px;
-  left: 75%;
-  background-color: #f1c40f;
-  width: 4.5px;
-  height: 9px;
-  transform: rotation(367deg);
-  -webkit-animation-name: confetti-animation-13;
-          animation-name: confetti-animation-13;
-  -webkit-animation-duration: 1.14584s;
-          animation-duration: 1.14584s;
-  -webkit-animation-delay: 0.54208s;
-          animation-delay: 0.54208s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-@-webkit-keyframes confetti-animation-13 {
-  to {
-    top: calc(100% + 64px);
-    left: 21%;
-    transform: rotation(513deg); } }
-
-@keyframes confetti-animation-13 {
-  to {
-    top: calc(100% + 64px);
-    left: 21%;
-    transform: rotation(513deg); } }
-
-.confetti-14 {
-  position: absolute;
-  top: -64px;
-  left: 22%;
-  background-color: #f1c40f;
-  width: 4px;
-  height: 8px;
-  transform: rotation(395deg);
-  -webkit-animation-name: confetti-animation-14;
-          animation-name: confetti-animation-14;
-  -webkit-animation-duration: 2.49019s;
-          animation-duration: 2.49019s;
-  -webkit-animation-delay: 1.32532s;
-          animation-delay: 1.32532s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-@-webkit-keyframes confetti-animation-14 {
-  to {
-    top: calc(100% + 64px);
-    left: 66%;
-    transform: rotation(329deg); } }
-
-@keyframes confetti-animation-14 {
-  to {
-    top: calc(100% + 64px);
-    left: 66%;
-    transform: rotation(329deg); } }
-
-.confetti-15 {
-  position: absolute;
-  top: -64px;
-  left: 78%;
-  background-color: #f1c40f;
-  width: 4px;
-  height: 8px;
-  transform: rotation(565deg);
-  -webkit-animation-name: confetti-animation-15;
-          animation-name: confetti-animation-15;
-  -webkit-animation-duration: 2.42089s;
-          animation-duration: 2.42089s;
-  -webkit-animation-delay: 1.41082s;
-          animation-delay: 1.41082s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-@-webkit-keyframes confetti-animation-15 {
-  to {
-    top: calc(100% + 64px);
-    left: -13%;
-    transform: rotation(230deg); } }
-
-@keyframes confetti-animation-15 {
-  to {
-    top: calc(100% + 64px);
-    left: -13%;
-    transform: rotation(230deg); } }
-
-.confetti-16 {
-  position: absolute;
-  top: -64px;
-  left: 54%;
-  background-color: #3498db;
-  width: 3px;
-  height: 6px;
-  transform: rotation(84deg);
-  -webkit-animation-name: confetti-animation-16;
-          animation-name: confetti-animation-16;
-  -webkit-animation-duration: 1.16275s;
-          animation-duration: 1.16275s;
-  -webkit-animation-delay: 1.12556s;
-          animation-delay: 1.12556s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-@-webkit-keyframes confetti-animation-16 {
-  to {
-    top: calc(100% + 64px);
-    left: 35%;
-    transform: rotation(506deg); } }
-
-@keyframes confetti-animation-16 {
-  to {
-    top: calc(100% + 64px);
-    left: 35%;
-    transform: rotation(506deg); } }
-
-.confetti-17 {
-  position: absolute;
-  top: -64px;
-  left: 81%;
-  background-color: #f1c40f;
-  width: 3px;
-  height: 6px;
-  transform: rotation(212deg);
-  -webkit-animation-name: confetti-animation-17;
-          animation-name: confetti-animation-17;
-  -webkit-animation-duration: 2.06433s;
-          animation-duration: 2.06433s;
-  -webkit-animation-delay: 1.00931s;
-          animation-delay: 1.00931s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-@-webkit-keyframes confetti-animation-17 {
-  to {
-    top: calc(100% + 64px);
-    left: 86%;
-    transform: rotation(382deg); } }
-
-@keyframes confetti-animation-17 {
-  to {
-    top: calc(100% + 64px);
-    left: 86%;
-    transform: rotation(382deg); } }
-
-.confetti-18 {
-  position: absolute;
-  top: -64px;
-  left: 96%;
-  background-color: #3498db;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(540deg);
-  -webkit-animation-name: confetti-animation-18;
-          animation-name: confetti-animation-18;
-  -webkit-animation-duration: 1.23794s;
-          animation-duration: 1.23794s;
-  -webkit-animation-delay: 0.25242s;
-          animation-delay: 0.25242s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-@-webkit-keyframes confetti-animation-18 {
-  to {
-    top: calc(100% + 64px);
-    left: 56%;
-    transform: rotation(360deg); } }
-
-@keyframes confetti-animation-18 {
-  to {
-    top: calc(100% + 64px);
-    left: 56%;
-    transform: rotation(360deg); } }
-
-.confetti-19 {
-  position: absolute;
-  top: -64px;
-  left: 83%;
-  background-color: #9b59b6;
-  width: 5px;
-  height: 10px;
-  transform: rotation(410deg);
-  -webkit-animation-name: confetti-animation-19;
-          animation-name: confetti-animation-19;
-  -webkit-animation-duration: 1.86949s;
-          animation-duration: 1.86949s;
-  -webkit-animation-delay: 0.79951s;
-          animation-delay: 0.79951s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-@-webkit-keyframes confetti-animation-19 {
-  to {
-    top: calc(100% + 64px);
-    left: 17%;
-    transform: rotation(8deg); } }
-
-@keyframes confetti-animation-19 {
-  to {
-    top: calc(100% + 64px);
-    left: 17%;
-    transform: rotation(8deg); } }
-
-.confetti-20 {
-  position: absolute;
-  top: -64px;
-  left: 125%;
-  background-color: #9b59b6;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(632deg);
-  -webkit-animation-name: confetti-animation-20;
-          animation-name: confetti-animation-20;
-  -webkit-animation-duration: 1.47586s;
-          animation-duration: 1.47586s;
-  -webkit-animation-delay: 0.28817s;
-          animation-delay: 0.28817s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-@-webkit-keyframes confetti-animation-20 {
-  to {
-    top: calc(100% + 64px);
-    left: 115%;
-    transform: rotation(202deg); } }
-
-@keyframes confetti-animation-20 {
-  to {
-    top: calc(100% + 64px);
-    left: 115%;
-    transform: rotation(202deg); } }
-
-.confetti-21 {
-  position: absolute;
-  top: -64px;
-  left: 71%;
-  background-color: #9b59b6;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(422deg);
-  -webkit-animation-name: confetti-animation-21;
-          animation-name: confetti-animation-21;
-  -webkit-animation-duration: 1.23121s;
-          animation-duration: 1.23121s;
-  -webkit-animation-delay: 1.25455s;
-          animation-delay: 1.25455s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
-
-@-webkit-keyframes confetti-animation-21 {
-  to {
-    top: calc(100% + 64px);
-    left: 123%;
-    transform: rotation(96deg); } }
-
-@keyframes confetti-animation-21 {
-  to {
-    top: calc(100% + 64px);
-    left: 123%;
-    transform: rotation(96deg); } }
-
-.confetti-22 {
   position: absolute;
   top: -64px;
   left: 24%;
   background-color: #f1c40f;
   width: 3px;
   height: 6px;
-  transform: rotation(62deg);
+  transform: rotation(236deg);
+  -webkit-animation-name: confetti-animation-12;
+          animation-name: confetti-animation-12;
+  -webkit-animation-duration: 1.33492s;
+          animation-duration: 1.33492s;
+  -webkit-animation-delay: 1.11671s;
+          animation-delay: 1.11671s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes confetti-animation-12 {
+  to {
+    top: calc(100% + 64px);
+    left: 29%;
+    transform: rotation(199deg); } }
+
+@keyframes confetti-animation-12 {
+  to {
+    top: calc(100% + 64px);
+    left: 29%;
+    transform: rotation(199deg); } }
+
+.confetti-13 {
+  position: absolute;
+  top: -64px;
+  left: 31%;
+  background-color: #f1c40f;
+  width: 5px;
+  height: 10px;
+  transform: rotation(225deg);
+  -webkit-animation-name: confetti-animation-13;
+          animation-name: confetti-animation-13;
+  -webkit-animation-duration: 1.75772s;
+          animation-duration: 1.75772s;
+  -webkit-animation-delay: 0.91147s;
+          animation-delay: 0.91147s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes confetti-animation-13 {
+  to {
+    top: calc(100% + 64px);
+    left: 108%;
+    transform: rotation(368deg); } }
+
+@keyframes confetti-animation-13 {
+  to {
+    top: calc(100% + 64px);
+    left: 108%;
+    transform: rotation(368deg); } }
+
+.confetti-14 {
+  position: absolute;
+  top: -64px;
+  left: 70%;
+  background-color: #f1c40f;
+  width: 4px;
+  height: 8px;
+  transform: rotation(667deg);
+  -webkit-animation-name: confetti-animation-14;
+          animation-name: confetti-animation-14;
+  -webkit-animation-duration: 2.43828s;
+          animation-duration: 2.43828s;
+  -webkit-animation-delay: 1.34206s;
+          animation-delay: 1.34206s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes confetti-animation-14 {
+  to {
+    top: calc(100% + 64px);
+    left: 116%;
+    transform: rotation(545deg); } }
+
+@keyframes confetti-animation-14 {
+  to {
+    top: calc(100% + 64px);
+    left: 116%;
+    transform: rotation(545deg); } }
+
+.confetti-15 {
+  position: absolute;
+  top: -64px;
+  left: -21%;
+  background-color: #3498db;
+  width: 4.5px;
+  height: 9px;
+  transform: rotation(141deg);
+  -webkit-animation-name: confetti-animation-15;
+          animation-name: confetti-animation-15;
+  -webkit-animation-duration: 2.00932s;
+          animation-duration: 2.00932s;
+  -webkit-animation-delay: 1.40725s;
+          animation-delay: 1.40725s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes confetti-animation-15 {
+  to {
+    top: calc(100% + 64px);
+    left: 88%;
+    transform: rotation(10deg); } }
+
+@keyframes confetti-animation-15 {
+  to {
+    top: calc(100% + 64px);
+    left: 88%;
+    transform: rotation(10deg); } }
+
+.confetti-16 {
+  position: absolute;
+  top: -64px;
+  left: -13%;
+  background-color: #3498db;
+  width: 3.5px;
+  height: 7px;
+  transform: rotation(707deg);
+  -webkit-animation-name: confetti-animation-16;
+          animation-name: confetti-animation-16;
+  -webkit-animation-duration: 1.27582s;
+          animation-duration: 1.27582s;
+  -webkit-animation-delay: 1.34002s;
+          animation-delay: 1.34002s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes confetti-animation-16 {
+  to {
+    top: calc(100% + 64px);
+    left: 34%;
+    transform: rotation(543deg); } }
+
+@keyframes confetti-animation-16 {
+  to {
+    top: calc(100% + 64px);
+    left: 34%;
+    transform: rotation(543deg); } }
+
+.confetti-17 {
+  position: absolute;
+  top: -64px;
+  left: 123%;
+  background-color: #f1c40f;
+  width: 3.5px;
+  height: 7px;
+  transform: rotation(335deg);
+  -webkit-animation-name: confetti-animation-17;
+          animation-name: confetti-animation-17;
+  -webkit-animation-duration: 1.54763s;
+          animation-duration: 1.54763s;
+  -webkit-animation-delay: 0.1002s;
+          animation-delay: 0.1002s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes confetti-animation-17 {
+  to {
+    top: calc(100% + 64px);
+    left: 123%;
+    transform: rotation(365deg); } }
+
+@keyframes confetti-animation-17 {
+  to {
+    top: calc(100% + 64px);
+    left: 123%;
+    transform: rotation(365deg); } }
+
+.confetti-18 {
+  position: absolute;
+  top: -64px;
+  left: 36%;
+  background-color: #3498db;
+  width: 5px;
+  height: 10px;
+  transform: rotation(172deg);
+  -webkit-animation-name: confetti-animation-18;
+          animation-name: confetti-animation-18;
+  -webkit-animation-duration: 1.91732s;
+          animation-duration: 1.91732s;
+  -webkit-animation-delay: 1.11028s;
+          animation-delay: 1.11028s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes confetti-animation-18 {
+  to {
+    top: calc(100% + 64px);
+    left: 3%;
+    transform: rotation(413deg); } }
+
+@keyframes confetti-animation-18 {
+  to {
+    top: calc(100% + 64px);
+    left: 3%;
+    transform: rotation(413deg); } }
+
+.confetti-19 {
+  position: absolute;
+  top: -64px;
+  left: 48%;
+  background-color: #f1c40f;
+  width: 3px;
+  height: 6px;
+  transform: rotation(382deg);
+  -webkit-animation-name: confetti-animation-19;
+          animation-name: confetti-animation-19;
+  -webkit-animation-duration: 2.1024s;
+          animation-duration: 2.1024s;
+  -webkit-animation-delay: 0.83607s;
+          animation-delay: 0.83607s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes confetti-animation-19 {
+  to {
+    top: calc(100% + 64px);
+    left: -21%;
+    transform: rotation(521deg); } }
+
+@keyframes confetti-animation-19 {
+  to {
+    top: calc(100% + 64px);
+    left: -21%;
+    transform: rotation(521deg); } }
+
+.confetti-20 {
+  position: absolute;
+  top: -64px;
+  left: 12%;
+  background-color: #f1c40f;
+  width: 3px;
+  height: 6px;
+  transform: rotation(223deg);
+  -webkit-animation-name: confetti-animation-20;
+          animation-name: confetti-animation-20;
+  -webkit-animation-duration: 2.9003s;
+          animation-duration: 2.9003s;
+  -webkit-animation-delay: 1.09699s;
+          animation-delay: 1.09699s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes confetti-animation-20 {
+  to {
+    top: calc(100% + 64px);
+    left: -18%;
+    transform: rotation(700deg); } }
+
+@keyframes confetti-animation-20 {
+  to {
+    top: calc(100% + 64px);
+    left: -18%;
+    transform: rotation(700deg); } }
+
+.confetti-21 {
+  position: absolute;
+  top: -64px;
+  left: 125%;
+  background-color: #e74c3c;
+  width: 4px;
+  height: 8px;
+  transform: rotation(472deg);
+  -webkit-animation-name: confetti-animation-21;
+          animation-name: confetti-animation-21;
+  -webkit-animation-duration: 2.75572s;
+          animation-duration: 2.75572s;
+  -webkit-animation-delay: 0.06415s;
+          animation-delay: 0.06415s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes confetti-animation-21 {
+  to {
+    top: calc(100% + 64px);
+    left: -19%;
+    transform: rotation(364deg); } }
+
+@keyframes confetti-animation-21 {
+  to {
+    top: calc(100% + 64px);
+    left: -19%;
+    transform: rotation(364deg); } }
+
+.confetti-22 {
+  position: absolute;
+  top: -64px;
+  left: 72%;
+  background-color: #9b59b6;
+  width: 5px;
+  height: 10px;
+  transform: rotation(564deg);
   -webkit-animation-name: confetti-animation-22;
           animation-name: confetti-animation-22;
-  -webkit-animation-duration: 1.01612s;
-          animation-duration: 1.01612s;
-  -webkit-animation-delay: 0.29851s;
-          animation-delay: 0.29851s;
+  -webkit-animation-duration: 2.21431s;
+          animation-duration: 2.21431s;
+  -webkit-animation-delay: 0.9575s;
+          animation-delay: 0.9575s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-22 {
   to {
     top: calc(100% + 64px);
-    left: 53%;
-    transform: rotation(551deg); } }
+    left: 15%;
+    transform: rotation(600deg); } }
 
 @keyframes confetti-animation-22 {
   to {
     top: calc(100% + 64px);
-    left: 53%;
-    transform: rotation(551deg); } }
+    left: 15%;
+    transform: rotation(600deg); } }
 
 .confetti-23 {
   position: absolute;
   top: -64px;
-  left: 63%;
+  left: 35%;
   background-color: #e74c3c;
-  width: 5px;
-  height: 10px;
-  transform: rotation(171deg);
+  width: 4px;
+  height: 8px;
+  transform: rotation(147deg);
   -webkit-animation-name: confetti-animation-23;
           animation-name: confetti-animation-23;
-  -webkit-animation-duration: 1.18258s;
-          animation-duration: 1.18258s;
-  -webkit-animation-delay: 0.88831s;
-          animation-delay: 0.88831s;
+  -webkit-animation-duration: 1.88465s;
+          animation-duration: 1.88465s;
+  -webkit-animation-delay: 0.18557s;
+          animation-delay: 0.18557s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-23 {
   to {
     top: calc(100% + 64px);
-    left: 45%;
-    transform: rotation(407deg); } }
+    left: 8%;
+    transform: rotation(467deg); } }
 
 @keyframes confetti-animation-23 {
   to {
     top: calc(100% + 64px);
-    left: 45%;
-    transform: rotation(407deg); } }
+    left: 8%;
+    transform: rotation(467deg); } }
 
 .confetti-24 {
   position: absolute;
   top: -64px;
-  left: -4%;
-  background-color: #e74c3c;
+  left: 74%;
+  background-color: #9b59b6;
   width: 3.5px;
   height: 7px;
-  transform: rotation(510deg);
+  transform: rotation(210deg);
   -webkit-animation-name: confetti-animation-24;
           animation-name: confetti-animation-24;
-  -webkit-animation-duration: 2.39348s;
-          animation-duration: 2.39348s;
-  -webkit-animation-delay: 0.22793s;
-          animation-delay: 0.22793s;
+  -webkit-animation-duration: 1.81085s;
+          animation-duration: 1.81085s;
+  -webkit-animation-delay: 0.24366s;
+          animation-delay: 0.24366s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-24 {
   to {
     top: calc(100% + 64px);
-    left: 4%;
-    transform: rotation(33deg); } }
+    left: 113%;
+    transform: rotation(610deg); } }
 
 @keyframes confetti-animation-24 {
   to {
     top: calc(100% + 64px);
-    left: 4%;
-    transform: rotation(33deg); } }
+    left: 113%;
+    transform: rotation(610deg); } }
 
 .confetti-25 {
   position: absolute;
   top: -64px;
-  left: 91%;
-  background-color: #f1c40f;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(468deg);
+  left: -11%;
+  background-color: #3498db;
+  width: 3px;
+  height: 6px;
+  transform: rotation(221deg);
   -webkit-animation-name: confetti-animation-25;
           animation-name: confetti-animation-25;
-  -webkit-animation-duration: 2.55211s;
-          animation-duration: 2.55211s;
-  -webkit-animation-delay: 0.85676s;
-          animation-delay: 0.85676s;
+  -webkit-animation-duration: 1.58299s;
+          animation-duration: 1.58299s;
+  -webkit-animation-delay: 0.15171s;
+          animation-delay: 0.15171s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-25 {
   to {
     top: calc(100% + 64px);
-    left: 65%;
-    transform: rotation(455deg); } }
+    left: 30%;
+    transform: rotation(619deg); } }
 
 @keyframes confetti-animation-25 {
   to {
     top: calc(100% + 64px);
-    left: 65%;
-    transform: rotation(455deg); } }
+    left: 30%;
+    transform: rotation(619deg); } }
 
 .confetti-26 {
   position: absolute;
   top: -64px;
-  left: 16%;
-  background-color: #e74c3c;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(446deg);
+  left: 93%;
+  background-color: #f1c40f;
+  width: 3px;
+  height: 6px;
+  transform: rotation(712deg);
   -webkit-animation-name: confetti-animation-26;
           animation-name: confetti-animation-26;
-  -webkit-animation-duration: 2.32423s;
-          animation-duration: 2.32423s;
-  -webkit-animation-delay: 0.87647s;
-          animation-delay: 0.87647s;
+  -webkit-animation-duration: 2.02486s;
+          animation-duration: 2.02486s;
+  -webkit-animation-delay: 1.25581s;
+          animation-delay: 1.25581s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-26 {
   to {
     top: calc(100% + 64px);
-    left: -20%;
-    transform: rotation(113deg); } }
+    left: 69%;
+    transform: rotation(534deg); } }
 
 @keyframes confetti-animation-26 {
   to {
     top: calc(100% + 64px);
-    left: -20%;
-    transform: rotation(113deg); } }
+    left: 69%;
+    transform: rotation(534deg); } }
 
 .confetti-27 {
   position: absolute;
   top: -64px;
-  left: 109%;
-  background-color: #f1c40f;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(649deg);
+  left: 3%;
+  background-color: #9b59b6;
+  width: 3px;
+  height: 6px;
+  transform: rotation(286deg);
   -webkit-animation-name: confetti-animation-27;
           animation-name: confetti-animation-27;
-  -webkit-animation-duration: 2.05325s;
-          animation-duration: 2.05325s;
-  -webkit-animation-delay: 1.4127s;
-          animation-delay: 1.4127s;
+  -webkit-animation-duration: 2.49919s;
+          animation-duration: 2.49919s;
+  -webkit-animation-delay: 0.50075s;
+          animation-delay: 0.50075s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-27 {
   to {
     top: calc(100% + 64px);
-    left: 66%;
-    transform: rotation(170deg); } }
+    left: 105%;
+    transform: rotation(517deg); } }
 
 @keyframes confetti-animation-27 {
   to {
     top: calc(100% + 64px);
-    left: 66%;
-    transform: rotation(170deg); } }
+    left: 105%;
+    transform: rotation(517deg); } }
 
 .confetti-28 {
   position: absolute;
   top: -64px;
-  left: 59%;
-  background-color: #f1c40f;
-  width: 4px;
-  height: 8px;
-  transform: rotation(429deg);
+  left: 104%;
+  background-color: #e74c3c;
+  width: 5px;
+  height: 10px;
+  transform: rotation(161deg);
   -webkit-animation-name: confetti-animation-28;
           animation-name: confetti-animation-28;
-  -webkit-animation-duration: 2.19732s;
-          animation-duration: 2.19732s;
-  -webkit-animation-delay: 1.07641s;
-          animation-delay: 1.07641s;
+  -webkit-animation-duration: 2.09904s;
+          animation-duration: 2.09904s;
+  -webkit-animation-delay: 0.83105s;
+          animation-delay: 0.83105s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-28 {
   to {
     top: calc(100% + 64px);
-    left: 50%;
-    transform: rotation(154deg); } }
+    left: 53%;
+    transform: rotation(443deg); } }
 
 @keyframes confetti-animation-28 {
   to {
     top: calc(100% + 64px);
-    left: 50%;
-    transform: rotation(154deg); } }
+    left: 53%;
+    transform: rotation(443deg); } }
 
 .confetti-29 {
   position: absolute;
   top: -64px;
-  left: 32%;
+  left: 101%;
   background-color: #e74c3c;
   width: 4px;
   height: 8px;
-  transform: rotation(56deg);
+  transform: rotation(511deg);
   -webkit-animation-name: confetti-animation-29;
           animation-name: confetti-animation-29;
-  -webkit-animation-duration: 1.00469s;
-          animation-duration: 1.00469s;
-  -webkit-animation-delay: 0.87843s;
-          animation-delay: 0.87843s;
+  -webkit-animation-duration: 1.54939s;
+          animation-duration: 1.54939s;
+  -webkit-animation-delay: 1.21711s;
+          animation-delay: 1.21711s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-29 {
   to {
     top: calc(100% + 64px);
-    left: 15%;
-    transform: rotation(37deg); } }
+    left: 23%;
+    transform: rotation(178deg); } }
 
 @keyframes confetti-animation-29 {
   to {
     top: calc(100% + 64px);
-    left: 15%;
-    transform: rotation(37deg); } }
+    left: 23%;
+    transform: rotation(178deg); } }
 
 .confetti-30 {
   position: absolute;
   top: -64px;
-  left: 49%;
-  background-color: #9b59b6;
-  width: 4.5px;
-  height: 9px;
-  transform: rotation(716deg);
+  left: 16%;
+  background-color: #f1c40f;
+  width: 3.5px;
+  height: 7px;
+  transform: rotation(42deg);
   -webkit-animation-name: confetti-animation-30;
           animation-name: confetti-animation-30;
-  -webkit-animation-duration: 2.83074s;
-          animation-duration: 2.83074s;
-  -webkit-animation-delay: 0.52605s;
-          animation-delay: 0.52605s;
+  -webkit-animation-duration: 1.56961s;
+          animation-duration: 1.56961s;
+  -webkit-animation-delay: 0.2905s;
+          animation-delay: 0.2905s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-30 {
   to {
     top: calc(100% + 64px);
-    left: 14%;
-    transform: rotation(249deg); } }
+    left: 22%;
+    transform: rotation(623deg); } }
 
 @keyframes confetti-animation-30 {
   to {
     top: calc(100% + 64px);
-    left: 14%;
-    transform: rotation(249deg); } }
+    left: 22%;
+    transform: rotation(623deg); } }
 
 .confetti-31 {
   position: absolute;
   top: -64px;
-  left: 102%;
+  left: 16%;
   background-color: #e74c3c;
-  width: 5px;
-  height: 10px;
-  transform: rotation(248deg);
+  width: 3.5px;
+  height: 7px;
+  transform: rotation(303deg);
   -webkit-animation-name: confetti-animation-31;
           animation-name: confetti-animation-31;
-  -webkit-animation-duration: 2.42973s;
-          animation-duration: 2.42973s;
-  -webkit-animation-delay: 1.14961s;
-          animation-delay: 1.14961s;
+  -webkit-animation-duration: 1.3824s;
+          animation-duration: 1.3824s;
+  -webkit-animation-delay: 0.83252s;
+          animation-delay: 0.83252s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-31 {
   to {
     top: calc(100% + 64px);
-    left: 68%;
-    transform: rotation(267deg); } }
+    left: 7%;
+    transform: rotation(324deg); } }
 
 @keyframes confetti-animation-31 {
   to {
     top: calc(100% + 64px);
-    left: 68%;
-    transform: rotation(267deg); } }
+    left: 7%;
+    transform: rotation(324deg); } }
 
 .confetti-32 {
   position: absolute;
   top: -64px;
-  left: 21%;
-  background-color: #9b59b6;
-  width: 4.5px;
-  height: 9px;
-  transform: rotation(440deg);
+  left: 22%;
+  background-color: #3498db;
+  width: 3.5px;
+  height: 7px;
+  transform: rotation(154deg);
   -webkit-animation-name: confetti-animation-32;
           animation-name: confetti-animation-32;
-  -webkit-animation-duration: 1.88741s;
-          animation-duration: 1.88741s;
-  -webkit-animation-delay: 1.12413s;
-          animation-delay: 1.12413s;
+  -webkit-animation-duration: 2.07534s;
+          animation-duration: 2.07534s;
+  -webkit-animation-delay: 0.40368s;
+          animation-delay: 0.40368s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-32 {
   to {
     top: calc(100% + 64px);
-    left: -9%;
-    transform: rotation(211deg); } }
+    left: 2%;
+    transform: rotation(703deg); } }
 
 @keyframes confetti-animation-32 {
   to {
     top: calc(100% + 64px);
-    left: -9%;
-    transform: rotation(211deg); } }
+    left: 2%;
+    transform: rotation(703deg); } }
 
 .confetti-33 {
   position: absolute;
   top: -64px;
-  left: 98%;
-  background-color: #3498db;
+  left: 19%;
+  background-color: #f1c40f;
   width: 5px;
   height: 10px;
-  transform: rotation(661deg);
+  transform: rotation(503deg);
   -webkit-animation-name: confetti-animation-33;
           animation-name: confetti-animation-33;
-  -webkit-animation-duration: 2.07406s;
-          animation-duration: 2.07406s;
-  -webkit-animation-delay: 0.67351s;
-          animation-delay: 0.67351s;
+  -webkit-animation-duration: 2.59802s;
+          animation-duration: 2.59802s;
+  -webkit-animation-delay: 1.00358s;
+          animation-delay: 1.00358s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-33 {
   to {
     top: calc(100% + 64px);
-    left: 2%;
-    transform: rotation(126deg); } }
+    left: 91%;
+    transform: rotation(677deg); } }
 
 @keyframes confetti-animation-33 {
   to {
     top: calc(100% + 64px);
-    left: 2%;
-    transform: rotation(126deg); } }
+    left: 91%;
+    transform: rotation(677deg); } }
 
 .confetti-34 {
   position: absolute;
   top: -64px;
   left: 83%;
-  background-color: #e74c3c;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(329deg);
+  background-color: #9b59b6;
+  width: 5px;
+  height: 10px;
+  transform: rotation(3deg);
   -webkit-animation-name: confetti-animation-34;
           animation-name: confetti-animation-34;
-  -webkit-animation-duration: 1.7769s;
-          animation-duration: 1.7769s;
-  -webkit-animation-delay: 1.02145s;
-          animation-delay: 1.02145s;
+  -webkit-animation-duration: 1.27331s;
+          animation-duration: 1.27331s;
+  -webkit-animation-delay: 0.18117s;
+          animation-delay: 0.18117s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-34 {
   to {
     top: calc(100% + 64px);
-    left: 26%;
-    transform: rotation(590deg); } }
+    left: 16%;
+    transform: rotation(354deg); } }
 
 @keyframes confetti-animation-34 {
   to {
     top: calc(100% + 64px);
-    left: 26%;
-    transform: rotation(590deg); } }
+    left: 16%;
+    transform: rotation(354deg); } }
 
 .confetti-35 {
   position: absolute;
   top: -64px;
-  left: 58%;
-  background-color: #e74c3c;
-  width: 4.5px;
-  height: 9px;
-  transform: rotation(253deg);
+  left: 34%;
+  background-color: #f1c40f;
+  width: 3px;
+  height: 6px;
+  transform: rotation(438deg);
   -webkit-animation-name: confetti-animation-35;
           animation-name: confetti-animation-35;
-  -webkit-animation-duration: 1.68136s;
-          animation-duration: 1.68136s;
-  -webkit-animation-delay: 1.40935s;
-          animation-delay: 1.40935s;
+  -webkit-animation-duration: 2.67291s;
+          animation-duration: 2.67291s;
+  -webkit-animation-delay: 1.33023s;
+          animation-delay: 1.33023s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-35 {
   to {
     top: calc(100% + 64px);
-    left: -19%;
-    transform: rotation(409deg); } }
+    left: -15%;
+    transform: rotation(277deg); } }
 
 @keyframes confetti-animation-35 {
   to {
     top: calc(100% + 64px);
-    left: -19%;
-    transform: rotation(409deg); } }
+    left: -15%;
+    transform: rotation(277deg); } }
 
 .confetti-36 {
   position: absolute;
   top: -64px;
-  left: -9%;
-  background-color: #9b59b6;
-  width: 4.5px;
-  height: 9px;
-  transform: rotation(299deg);
+  left: -17%;
+  background-color: #3498db;
+  width: 3.5px;
+  height: 7px;
+  transform: rotation(168deg);
   -webkit-animation-name: confetti-animation-36;
           animation-name: confetti-animation-36;
-  -webkit-animation-duration: 2.16081s;
-          animation-duration: 2.16081s;
-  -webkit-animation-delay: 0.1175s;
-          animation-delay: 0.1175s;
+  -webkit-animation-duration: 1.7626s;
+          animation-duration: 1.7626s;
+  -webkit-animation-delay: 1.20852s;
+          animation-delay: 1.20852s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-36 {
   to {
     top: calc(100% + 64px);
-    left: 101%;
-    transform: rotation(239deg); } }
+    left: 70%;
+    transform: rotation(215deg); } }
 
 @keyframes confetti-animation-36 {
   to {
     top: calc(100% + 64px);
-    left: 101%;
-    transform: rotation(239deg); } }
+    left: 70%;
+    transform: rotation(215deg); } }
 
 .confetti-37 {
   position: absolute;
   top: -64px;
-  left: 93%;
-  background-color: #3498db;
-  width: 3px;
-  height: 6px;
-  transform: rotation(111deg);
+  left: 54%;
+  background-color: #9b59b6;
+  width: 4.5px;
+  height: 9px;
+  transform: rotation(564deg);
   -webkit-animation-name: confetti-animation-37;
           animation-name: confetti-animation-37;
-  -webkit-animation-duration: 1.04121s;
-          animation-duration: 1.04121s;
-  -webkit-animation-delay: 0.18366s;
-          animation-delay: 0.18366s;
+  -webkit-animation-duration: 2.23769s;
+          animation-duration: 2.23769s;
+  -webkit-animation-delay: 0.46817s;
+          animation-delay: 0.46817s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-37 {
   to {
     top: calc(100% + 64px);
-    left: 30%;
-    transform: rotation(85deg); } }
+    left: 120%;
+    transform: rotation(383deg); } }
 
 @keyframes confetti-animation-37 {
   to {
     top: calc(100% + 64px);
-    left: 30%;
-    transform: rotation(85deg); } }
+    left: 120%;
+    transform: rotation(383deg); } }
 
 .confetti-38 {
   position: absolute;
   top: -64px;
-  left: -6%;
-  background-color: #9b59b6;
+  left: 120%;
+  background-color: #e74c3c;
   width: 3px;
   height: 6px;
-  transform: rotation(569deg);
+  transform: rotation(434deg);
   -webkit-animation-name: confetti-animation-38;
           animation-name: confetti-animation-38;
-  -webkit-animation-duration: 2.43216s;
-          animation-duration: 2.43216s;
-  -webkit-animation-delay: 0.251s;
-          animation-delay: 0.251s;
+  -webkit-animation-duration: 1.99696s;
+          animation-duration: 1.99696s;
+  -webkit-animation-delay: 0.6171s;
+          animation-delay: 0.6171s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-38 {
   to {
     top: calc(100% + 64px);
-    left: -19%;
-    transform: rotation(690deg); } }
+    left: -9%;
+    transform: rotation(43deg); } }
 
 @keyframes confetti-animation-38 {
   to {
     top: calc(100% + 64px);
-    left: -19%;
-    transform: rotation(690deg); } }
+    left: -9%;
+    transform: rotation(43deg); } }
 
 .confetti-39 {
   position: absolute;
   top: -64px;
-  left: 96%;
-  background-color: #f1c40f;
-  width: 4.5px;
-  height: 9px;
-  transform: rotation(279deg);
+  left: 99%;
+  background-color: #9b59b6;
+  width: 4px;
+  height: 8px;
+  transform: rotation(43deg);
   -webkit-animation-name: confetti-animation-39;
           animation-name: confetti-animation-39;
-  -webkit-animation-duration: 2.29361s;
-          animation-duration: 2.29361s;
-  -webkit-animation-delay: 1.41608s;
-          animation-delay: 1.41608s;
+  -webkit-animation-duration: 2.88466s;
+          animation-duration: 2.88466s;
+  -webkit-animation-delay: 0.51181s;
+          animation-delay: 0.51181s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-39 {
   to {
     top: calc(100% + 64px);
-    left: 118%;
-    transform: rotation(623deg); } }
+    left: 106%;
+    transform: rotation(686deg); } }
 
 @keyframes confetti-animation-39 {
   to {
     top: calc(100% + 64px);
-    left: 118%;
-    transform: rotation(623deg); } }
+    left: 106%;
+    transform: rotation(686deg); } }
 
 .confetti-40 {
   position: absolute;
   top: -64px;
-  left: -9%;
-  background-color: #f1c40f;
-  width: 4.5px;
-  height: 9px;
-  transform: rotation(389deg);
+  left: 31%;
+  background-color: #e74c3c;
+  width: 5px;
+  height: 10px;
+  transform: rotation(331deg);
   -webkit-animation-name: confetti-animation-40;
           animation-name: confetti-animation-40;
-  -webkit-animation-duration: 1.15844s;
-          animation-duration: 1.15844s;
-  -webkit-animation-delay: 0.99475s;
-          animation-delay: 0.99475s;
+  -webkit-animation-duration: 2.34094s;
+          animation-duration: 2.34094s;
+  -webkit-animation-delay: 0.23269s;
+          animation-delay: 0.23269s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-40 {
   to {
     top: calc(100% + 64px);
-    left: 105%;
-    transform: rotation(190deg); } }
+    left: 46%;
+    transform: rotation(46deg); } }
 
 @keyframes confetti-animation-40 {
   to {
     top: calc(100% + 64px);
-    left: 105%;
-    transform: rotation(190deg); } }
+    left: 46%;
+    transform: rotation(46deg); } }
 
 .confetti-41 {
   position: absolute;
   top: -64px;
-  left: 38%;
-  background-color: #f1c40f;
-  width: 5px;
-  height: 10px;
-  transform: rotation(474deg);
+  left: -4%;
+  background-color: #e74c3c;
+  width: 3px;
+  height: 6px;
+  transform: rotation(436deg);
   -webkit-animation-name: confetti-animation-41;
           animation-name: confetti-animation-41;
-  -webkit-animation-duration: 1.3481s;
-          animation-duration: 1.3481s;
-  -webkit-animation-delay: 0.22473s;
-          animation-delay: 0.22473s;
+  -webkit-animation-duration: 1.40977s;
+          animation-duration: 1.40977s;
+  -webkit-animation-delay: 0.89754s;
+          animation-delay: 0.89754s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-41 {
   to {
     top: calc(100% + 64px);
-    left: 59%;
-    transform: rotation(133deg); } }
+    left: 14%;
+    transform: rotation(569deg); } }
 
 @keyframes confetti-animation-41 {
   to {
     top: calc(100% + 64px);
-    left: 59%;
-    transform: rotation(133deg); } }
+    left: 14%;
+    transform: rotation(569deg); } }
 
 .confetti-42 {
   position: absolute;
   top: -64px;
-  left: 56%;
-  background-color: #9b59b6;
-  width: 4.5px;
-  height: 9px;
-  transform: rotation(192deg);
+  left: 35%;
+  background-color: #f1c40f;
+  width: 3px;
+  height: 6px;
+  transform: rotation(386deg);
   -webkit-animation-name: confetti-animation-42;
           animation-name: confetti-animation-42;
-  -webkit-animation-duration: 1.81603s;
-          animation-duration: 1.81603s;
-  -webkit-animation-delay: 0.00607s;
-          animation-delay: 0.00607s;
+  -webkit-animation-duration: 2.77424s;
+          animation-duration: 2.77424s;
+  -webkit-animation-delay: 0.52051s;
+          animation-delay: 0.52051s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-42 {
   to {
     top: calc(100% + 64px);
-    left: 73%;
-    transform: rotation(188deg); } }
+    left: 87%;
+    transform: rotation(272deg); } }
 
 @keyframes confetti-animation-42 {
   to {
     top: calc(100% + 64px);
-    left: 73%;
-    transform: rotation(188deg); } }
+    left: 87%;
+    transform: rotation(272deg); } }
 
 .confetti-43 {
   position: absolute;
   top: -64px;
-  left: -21%;
-  background-color: #9b59b6;
-  width: 5px;
-  height: 10px;
-  transform: rotation(588deg);
+  left: 17%;
+  background-color: #f1c40f;
+  width: 4px;
+  height: 8px;
+  transform: rotation(365deg);
   -webkit-animation-name: confetti-animation-43;
           animation-name: confetti-animation-43;
-  -webkit-animation-duration: 2.10137s;
-          animation-duration: 2.10137s;
-  -webkit-animation-delay: 0.45068s;
-          animation-delay: 0.45068s;
+  -webkit-animation-duration: 2.76495s;
+          animation-duration: 2.76495s;
+  -webkit-animation-delay: 0.45734s;
+          animation-delay: 0.45734s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-43 {
   to {
     top: calc(100% + 64px);
-    left: 119%;
-    transform: rotation(633deg); } }
+    left: -8%;
+    transform: rotation(645deg); } }
 
 @keyframes confetti-animation-43 {
   to {
     top: calc(100% + 64px);
-    left: 119%;
-    transform: rotation(633deg); } }
+    left: -8%;
+    transform: rotation(645deg); } }
 
 .confetti-44 {
   position: absolute;
   top: -64px;
-  left: 0%;
-  background-color: #3498db;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(342deg);
+  left: 72%;
+  background-color: #e74c3c;
+  width: 4.5px;
+  height: 9px;
+  transform: rotation(209deg);
   -webkit-animation-name: confetti-animation-44;
           animation-name: confetti-animation-44;
-  -webkit-animation-duration: 2.89002s;
-          animation-duration: 2.89002s;
-  -webkit-animation-delay: 1.2608s;
-          animation-delay: 1.2608s;
+  -webkit-animation-duration: 1.60551s;
+          animation-duration: 1.60551s;
+  -webkit-animation-delay: 0.34615s;
+          animation-delay: 0.34615s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-44 {
   to {
     top: calc(100% + 64px);
-    left: 86%;
-    transform: rotation(662deg); } }
+    left: 67%;
+    transform: rotation(474deg); } }
 
 @keyframes confetti-animation-44 {
   to {
     top: calc(100% + 64px);
-    left: 86%;
-    transform: rotation(662deg); } }
+    left: 67%;
+    transform: rotation(474deg); } }
 
 .confetti-45 {
   position: absolute;
   top: -64px;
-  left: 14%;
+  left: 30%;
   background-color: #f1c40f;
-  width: 3px;
-  height: 6px;
-  transform: rotation(391deg);
+  width: 5px;
+  height: 10px;
+  transform: rotation(114deg);
   -webkit-animation-name: confetti-animation-45;
           animation-name: confetti-animation-45;
-  -webkit-animation-duration: 2.06317s;
-          animation-duration: 2.06317s;
-  -webkit-animation-delay: 0.39189s;
-          animation-delay: 0.39189s;
+  -webkit-animation-duration: 2.89488s;
+          animation-duration: 2.89488s;
+  -webkit-animation-delay: 1.13306s;
+          animation-delay: 1.13306s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-45 {
   to {
     top: calc(100% + 64px);
-    left: 38%;
-    transform: rotation(591deg); } }
+    left: 92%;
+    transform: rotation(300deg); } }
 
 @keyframes confetti-animation-45 {
   to {
     top: calc(100% + 64px);
-    left: 38%;
-    transform: rotation(591deg); } }
+    left: 92%;
+    transform: rotation(300deg); } }
 
 .confetti-46 {
   position: absolute;
   top: -64px;
-  left: -15%;
-  background-color: #f1c40f;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(156deg);
+  left: 1%;
+  background-color: #3498db;
+  width: 3px;
+  height: 6px;
+  transform: rotation(211deg);
   -webkit-animation-name: confetti-animation-46;
           animation-name: confetti-animation-46;
-  -webkit-animation-duration: 1.25524s;
-          animation-duration: 1.25524s;
-  -webkit-animation-delay: 0.06839s;
-          animation-delay: 0.06839s;
+  -webkit-animation-duration: 2.05044s;
+          animation-duration: 2.05044s;
+  -webkit-animation-delay: 0.88698s;
+          animation-delay: 0.88698s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-46 {
   to {
     top: calc(100% + 64px);
-    left: 20%;
-    transform: rotation(36deg); } }
+    left: -6%;
+    transform: rotation(340deg); } }
 
 @keyframes confetti-animation-46 {
   to {
     top: calc(100% + 64px);
-    left: 20%;
-    transform: rotation(36deg); } }
+    left: -6%;
+    transform: rotation(340deg); } }
 
 .confetti-47 {
   position: absolute;
   top: -64px;
-  left: 56%;
-  background-color: #3498db;
-  width: 4.5px;
-  height: 9px;
-  transform: rotation(428deg);
+  left: 116%;
+  background-color: #e74c3c;
+  width: 3px;
+  height: 6px;
+  transform: rotation(59deg);
   -webkit-animation-name: confetti-animation-47;
           animation-name: confetti-animation-47;
-  -webkit-animation-duration: 2.31048s;
-          animation-duration: 2.31048s;
-  -webkit-animation-delay: 0.96526s;
-          animation-delay: 0.96526s;
+  -webkit-animation-duration: 1.61056s;
+          animation-duration: 1.61056s;
+  -webkit-animation-delay: 1.34463s;
+          animation-delay: 1.34463s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-47 {
   to {
     top: calc(100% + 64px);
-    left: -10%;
-    transform: rotation(525deg); } }
+    left: 97%;
+    transform: rotation(656deg); } }
 
 @keyframes confetti-animation-47 {
   to {
     top: calc(100% + 64px);
-    left: -10%;
-    transform: rotation(525deg); } }
+    left: 97%;
+    transform: rotation(656deg); } }
 
 .confetti-48 {
   position: absolute;
   top: -64px;
-  left: -14%;
-  background-color: #9b59b6;
-  width: 4px;
-  height: 8px;
-  transform: rotation(249deg);
+  left: 109%;
+  background-color: #e74c3c;
+  width: 5px;
+  height: 10px;
+  transform: rotation(371deg);
   -webkit-animation-name: confetti-animation-48;
           animation-name: confetti-animation-48;
-  -webkit-animation-duration: 2.10055s;
-          animation-duration: 2.10055s;
-  -webkit-animation-delay: 0.14917s;
-          animation-delay: 0.14917s;
+  -webkit-animation-duration: 1.75987s;
+          animation-duration: 1.75987s;
+  -webkit-animation-delay: 0.32684s;
+          animation-delay: 0.32684s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-48 {
   to {
     top: calc(100% + 64px);
-    left: 91%;
-    transform: rotation(102deg); } }
+    left: -20%;
+    transform: rotation(425deg); } }
 
 @keyframes confetti-animation-48 {
   to {
     top: calc(100% + 64px);
-    left: 91%;
-    transform: rotation(102deg); } }
+    left: -20%;
+    transform: rotation(425deg); } }
 
 .confetti-49 {
   position: absolute;
   top: -64px;
-  left: -24%;
+  left: 111%;
   background-color: #e74c3c;
-  width: 3.5px;
-  height: 7px;
-  transform: rotation(459deg);
+  width: 4px;
+  height: 8px;
+  transform: rotation(358deg);
   -webkit-animation-name: confetti-animation-49;
           animation-name: confetti-animation-49;
-  -webkit-animation-duration: 1.73509s;
-          animation-duration: 1.73509s;
-  -webkit-animation-delay: 0.31101s;
-          animation-delay: 0.31101s;
+  -webkit-animation-duration: 2.69607s;
+          animation-duration: 2.69607s;
+  -webkit-animation-delay: 1.44576s;
+          animation-delay: 1.44576s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-49 {
   to {
     top: calc(100% + 64px);
-    left: 87%;
-    transform: rotation(522deg); } }
+    left: 104%;
+    transform: rotation(432deg); } }
 
 @keyframes confetti-animation-49 {
   to {
     top: calc(100% + 64px);
-    left: 87%;
-    transform: rotation(522deg); } }
+    left: 104%;
+    transform: rotation(432deg); } }
 
 .confetti-50 {
   position: absolute;
   top: -64px;
-  left: 2%;
+  left: -14%;
   background-color: #9b59b6;
-  width: 4px;
-  height: 8px;
-  transform: rotation(488deg);
+  width: 4.5px;
+  height: 9px;
+  transform: rotation(203deg);
   -webkit-animation-name: confetti-animation-50;
           animation-name: confetti-animation-50;
-  -webkit-animation-duration: 1.66099s;
-          animation-duration: 1.66099s;
-  -webkit-animation-delay: 1.21775s;
-          animation-delay: 1.21775s;
+  -webkit-animation-duration: 2.25904s;
+          animation-duration: 2.25904s;
+  -webkit-animation-delay: 0.8705s;
+          animation-delay: 0.8705s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 
 @-webkit-keyframes confetti-animation-50 {
   to {
     top: calc(100% + 64px);
-    left: 16%;
-    transform: rotation(192deg); } }
+    left: -9%;
+    transform: rotation(87deg); } }
 
 @keyframes confetti-animation-50 {
   to {
     top: calc(100% + 64px);
-    left: 16%;
-    transform: rotation(192deg); } }
+    left: -9%;
+    transform: rotation(87deg); } }
 
 .container, .announcement, h1.section-title {
   width: 1200px;
@@ -1580,6 +1604,10 @@ header.header-dance {
   background-color: white;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); }
+  @media screen and (max-width: 780px) {
+    header.header-dance {
+      position: relative;
+      overflow-x: hidden; } }
   header.header-dance .container, header.header-dance .announcement, header.header-dance h1.section-title {
     margin-top: 0;
     padding-top: 0;
@@ -1588,7 +1616,8 @@ header.header-dance {
     margin-bottom: -35px; }
     @media screen and (max-width: 780px) {
       header.header-dance img {
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        height: 150px; } }
   header.header-dance .lateral-primary {
     padding-bottom: 32px; }
     header.header-dance .lateral-primary p {
@@ -1596,6 +1625,9 @@ header.header-dance {
   header.header-dance .lateral-secondary {
     align-items: flex-end;
     position: relative; }
+    @media screen and (max-width: 780px) {
+      header.header-dance .lateral-secondary {
+        align-self: stretch; } }
   header.header-dance.dance-started {
     -webkit-animation-name: party-colors;
             animation-name: party-colors;
@@ -1691,16 +1723,16 @@ header.header-dance {
 @media screen and (max-width: 780px) {
   @-webkit-keyframes icon-slide-in {
     0% {
-      transform: translateX(-150%); }
+      transform: translateX(-150%) rotate(-45deg); }
     90% {
-      transform: translateX(10%); }
+      transform: translateX(10%) rotate(15deg); }
     100% {
       transform: translateX(0%); } }
   @keyframes icon-slide-in {
     0% {
-      transform: translateX(-150%); }
+      transform: translateX(-150%) rotate(-45deg); }
     90% {
-      transform: translateX(10%); }
+      transform: translateX(10%) rotate(15deg); }
     100% {
       transform: translateX(0%); } } }
 
