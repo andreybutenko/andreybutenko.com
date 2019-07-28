@@ -1,7 +1,10 @@
+const fs = require('fs');
+const PROJECT_ORDER = JSON.parse(fs.readFileSync('src/_data/projectOrder.json', 'utf8'));
+
 const isProduction = process.env.NODE_ENV === 'production';
 
-const filters = require('./_eleventy/filters.js')
-const shortcodes = require('./_eleventy/shortcodes.js')
+const filters = require('./_eleventy/filters.js');
+const shortcodes = require('./_eleventy/shortcodes.js');
 
 module.exports = function(config) {
   Object.keys(filters).forEach(filterName => {
@@ -20,6 +23,15 @@ module.exports = function(config) {
   // config.addPassthroughCopy('src/robots.txt');
 
   config.addCollection('projects', collection => {
+    const projects = collection
+      .getAllSorted()
+      .filter(item => item.inputPath.match(/\/projects\//) !== null)
+      .reverse();
+
+    return PROJECT_ORDER.map(directoryName => projects.filter(project => project.data.directory == directoryName)[0]);
+  });
+
+  onfig.addCollection('allProjects', collection => {
     return collection
       .getAllSorted()
       .filter(item => item.inputPath.match(/\/projects\//) !== null)
