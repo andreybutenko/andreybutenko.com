@@ -235,8 +235,14 @@
     }
 
     window.addEventListener('load', () => {
-      (new Image()).src= '/assets/andreyys-dance.png'; // preload
-      document.querySelector('header.header-dance img').addEventListener('mouseenter', () => {
+      (new Image()).src= DEFAULT_IMG;
+      (new Image()).src= DANCE_IMG;
+
+      const imageElement = document.querySelector('header.header-dance img');
+      imageElement.src = DANCE_IMG;
+      setTimeout(() => document.querySelector('header.header-dance img').src = DEFAULT_IMG, 1000);
+
+      imageElement.addEventListener('mouseenter', () => {
         document.querySelector('header.header-dance').classList.remove('dance-not-started');
         document.querySelector('header.header-dance').classList.add('dance-started');
         document.querySelector('header.header-dance img').src = DANCE_IMG;
@@ -249,12 +255,12 @@
         }
       });
       
-      document.querySelector('header.header-dance img').addEventListener('mouseleave', () => {
+      imageElement.addEventListener('mouseleave', () => {
         const container = getContainer();
         document.querySelector('header.header-dance img').src = DEFAULT_IMG;
         document.querySelector('header.header-dance').classList.remove('dance-started')
         document.querySelectorAll('.confetti').forEach(ele => container.removeChild(ele));
-      })
+      });
     });
   </script>
 
