@@ -78,4 +78,9 @@ header.header-dance {
       animation-fill-mode: forwards;
     }
   }
+
+  &.dance-loading img {
+    margin-left: -100vw;
+    animation-play-state: paused;
+  }
 }

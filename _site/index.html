@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/lazysizes.min.js" async=""></script>
     <title>
         Andrey Butenko</title>
   </head>
   <body>
     
     
+  <div id="preload-container" style="display: none;"></div>
   
-  <header class="header-dance dance-not-started">
+  <header class="header-dance dance-not-started dance-loading">
     <div class="container lateral-view alt">
       <div class="lateral-secondary">
         
-    <img src="/assets/andreyys.png" alt="Icon of Andrey" />
+    <img src="/assets/andreyys-lowres.png" alt="Icon of Andrey" />
   
       </div>
       <div class="lateral-primary">
@@ -58,7 +60,7 @@
     
     <article class="lateral-view">
     <header class="lateral-secondary">
-      <img src="/assets/uno/uno-icon.png" alt="Uno icon" />
+      <img data-src="/assets/uno/uno-icon.png" class="lazyload" alt="Uno icon" />
     </header>
     <div class="lateral-primary">
       <h2>Uno</h2>
@@ -79,7 +81,7 @@
     <hr/>
     <article class="lateral-view alt">
     <header class="lateral-secondary">
-      <img src="/assets/clubkoala/clubkoala.png" alt="Club Koala icon" />
+      <img data-src="/assets/clubkoala/clubkoala.png" class="lazyload" alt="Club Koala icon" />
     </header>
     <div class="lateral-primary">
       <h2>Club Koala</h2>
@@ -102,7 +104,7 @@
     <hr/>
     <article class="lateral-view">
     <header class="lateral-secondary">
-      <img src="/assets/interncommunity/interncommunity.png" alt="Intern Community icon" />
+      <img data-src="/assets/interncommunity/interncommunity.png" class="lazyload" alt="Intern Community icon" />
     </header>
     <div class="lateral-primary">
       <h2>Intern Community</h2>
@@ -121,7 +123,7 @@
     <hr/>
     <article class="lateral-view alt">
     <header class="lateral-secondary">
-      <img src="/assets/naturebridge/naturebridge.png" alt="National Park Adventure icon" />
+      <img data-src="/assets/naturebridge/naturebridge.png" class="lazyload" alt="National Park Adventure icon" />
     </header>
     <div class="lateral-primary">
       <h2>National Park Adventure</h2>
@@ -142,7 +144,7 @@
     <hr/>
     <article class="lateral-view">
     <header class="lateral-secondary">
-      <img src="/assets/pnw-climate-change/pnw-climate-change.png" alt="Pacific Northwest Climate Change icon" />
+      <img data-src="/assets/pnw-climate-change/pnw-climate-change.png" class="lazyload" alt="Pacific Northwest Climate Change icon" />
     </header>
     <div class="lateral-primary">
       <h2>Pacific Northwest Climate Change</h2>
@@ -162,7 +164,7 @@
     <hr/>
     <article class="lateral-view alt">
     <header class="lateral-secondary">
-      <img src="/assets/bac/bac.png" alt="Budget Advisory Committee Website icon" />
+      <img data-src="/assets/bac/bac.png" class="lazyload" alt="Budget Advisory Committee Website icon" />
     </header>
     <div class="lateral-primary">
       <h2>Budget Advisory Committee Website</h2>
@@ -180,7 +182,7 @@
     <hr/>
     <article class="lateral-view">
     <header class="lateral-secondary">
-      <img src="/assets/emoji/emoji.png" alt="Emoji Toolkit icon" />
+      <img data-src="/assets/emoji/emoji.png" class="lazyload" alt="Emoji Toolkit icon" />
     </header>
     <div class="lateral-primary">
       <h2>Emoji Toolkit</h2>
@@ -200,7 +202,7 @@
     <hr/>
     <article class="lateral-view alt">
     <header class="lateral-secondary">
-      <img src="/assets/pulseoximetry/pulseoximetry.png" alt="NFC Pulseoximetry icon" />
+      <img data-src="/assets/pulseoximetry/pulseoximetry.png" class="lazyload" alt="NFC Pulseoximetry icon" />
     </header>
     <div class="lateral-primary">
       <h2>NFC Pulseoximetry</h2>
@@ -221,8 +223,8 @@
   </main>
 
   <script>
-    const DEFAULT_IMG = '/assets/andreyys.png';
-    const DANCE_IMG = '/assets/andreyys-dance.png';
+    const DEFAULT_IMG = '/assets/andreyys-lowres.png';
+    const DANCE_IMG = '/assets/andreyys-dance-lowres.png';
     const MOBILE_BREAK = 780;
     const MOBILE_CONTAINER = 'header.header-dance';
     const DESKTOP_CONTAINER = 'header.header-dance .lateral-secondary';
@@ -234,13 +236,34 @@
       return document.querySelector(DESKTOP_CONTAINER);
     }
 
-    window.addEventListener('load', () => {
-      (new Image()).src= DEFAULT_IMG;
-      (new Image()).src= DANCE_IMG;
+    // preload images into DOM. preloading just using JS Image object gets garbage collected
+    function loadImages(images, callback) {
+      const preloadContainer = document.getElementById('preload-container');
+      let remaining = images.length;
 
-      const imageElement = document.querySelector('header.header-dance img');
-      imageElement.src = DANCE_IMG;
+      const piecewiseCallback = () => {
+        remaining--;
+        if(remaining <= 0) {
+          callback();
+        }
+      }
+
+      for(let i = 0; i < images.length; i++) {
+        const imgElement = document.createElement('img');
+        preloadContainer.appendChild(imgElement);
+        imgElement.src = images[i];
+        imgElement.onload = piecewiseCallback;
+      }
+    }
+
+    function startAnimation() {
+      document.querySelector('header.header-dance img').src = DANCE_IMG;
+      document.querySelector('.header-dance').classList.remove('dance-loading');
       setTimeout(() => document.querySelector('header.header-dance img').src = DEFAULT_IMG, 1000);
+    }
+
+    function setupListeners() {
+      const imageElement = document.querySelector('header.header-dance img');
 
       imageElement.addEventListener('mouseenter', () => {
         document.querySelector('header.header-dance').classList.remove('dance-not-started');
@@ -261,6 +284,11 @@
         document.querySelector('header.header-dance').classList.remove('dance-started')
         document.querySelectorAll('.confetti').forEach(ele => container.removeChild(ele));
       });
+    }
+
+    window.addEventListener('load', () => {
+      loadImages([DEFAULT_IMG, DANCE_IMG], startAnimation);
+      setupListeners();
     });
   </script>
 

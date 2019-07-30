@@ -3,6 +3,7 @@
 {% import 'partials/macros.njk' as macros %}
 
 {% block content %}
+  <div id="preload-container" style="display: none;"></div>
   {% call macros.generateHeader(pageTitle) %}
     <p>
       I am a front-end developer studying Informatics at the University of Washington. I am skilled in developing web apps with Vue and mobile apps with React Native.
@@ -11,7 +12,7 @@
       Beyond code, I value understanding user needs and apply this understanding to create more useful and more compelling user experiences.
     </p>
     ----
-    <img src="/assets/andreyys.png" alt="Icon of Andrey" />
+    <img src="/assets/andreyys-lowres.png" alt="Icon of Andrey" />
   {% endcall %}
 
   {% call macros.generateAnnouncement() %}
@@ -33,8 +34,8 @@
   </main>
 
   <script>
-    const DEFAULT_IMG = '/assets/andreyys.png';
-    const DANCE_IMG = '/assets/andreyys-dance.png';
+    const DEFAULT_IMG = '/assets/andreyys-lowres.png';
+    const DANCE_IMG = '/assets/andreyys-dance-lowres.png';
     const MOBILE_BREAK = 780;
     const MOBILE_CONTAINER = 'header.header-dance';
     const DESKTOP_CONTAINER = 'header.header-dance .lateral-secondary';
@@ -46,13 +47,34 @@
       return document.querySelector(DESKTOP_CONTAINER);
     }
 
-    window.addEventListener('load', () => {
-      (new Image()).src= DEFAULT_IMG;
-      (new Image()).src= DANCE_IMG;
+    // preload images into DOM. preloading just using JS Image object gets garbage collected
+    function loadImages(images, callback) {
+      const preloadContainer = document.getElementById('preload-container');
+      let remaining = images.length;
 
-      const imageElement = document.querySelector('header.header-dance img');
-      imageElement.src = DANCE_IMG;
+      const piecewiseCallback = () => {
+        remaining--;
+        if(remaining <= 0) {
+          callback();
+        }
+      }
+
+      for(let i = 0; i < images.length; i++) {
+        const imgElement = document.createElement('img');
+        preloadContainer.appendChild(imgElement);
+        imgElement.src = images[i];
+        imgElement.onload = piecewiseCallback;
+      }
+    }
+
+    function startAnimation() {
+      document.querySelector('header.header-dance img').src = DANCE_IMG;
+      document.querySelector('.header-dance').classList.remove('dance-loading');
       setTimeout(() => document.querySelector('header.header-dance img').src = DEFAULT_IMG, 1000);
+    }
+
+    function setupListeners() {
+      const imageElement = document.querySelector('header.header-dance img');
 
       imageElement.addEventListener('mouseenter', () => {
         document.querySelector('header.header-dance').classList.remove('dance-not-started');
@@ -73,6 +95,11 @@
         document.querySelector('header.header-dance').classList.remove('dance-started')
         document.querySelectorAll('.confetti').forEach(ele => container.removeChild(ele));
       });
+    }
+
+    window.addEventListener('load', () => {
+      loadImages([DEFAULT_IMG, DANCE_IMG], startAnimation);
+      setupListeners();
     });
   </script>
 {% endblock %}
