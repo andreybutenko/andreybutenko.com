@@ -1,0 +1,39 @@
+button,
+.button {
+  cursor: pointer;
+  display: block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-right: 8px;
+  transition: 250ms color, 250ms background-color;
+  background-color: transparent;
+
+  &.bare {
+    color: #0984e3;
+
+    &:hover {
+      color: #74b9ff;
+    }
+  } 
+
+  &.primary {
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+    
+    &:hover {
+      background-color: #74b9ff;
+    }
+  }
+
+  &.primary-ghost {
+    border: 1px solid #0984e3;
+    color: #0984e3;
+    text-decoration: none;
+    
+    &:hover {
+      border-color: #74b9ff;
+      color: #74b9ff;
+    }
+  }
+}

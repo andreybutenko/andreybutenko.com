@@ -31,7 +31,7 @@ module.exports = function(config) {
     return PROJECT_ORDER.map(directoryName => projects.filter(project => project.data.directory == directoryName)[0]);
   });
 
-  onfig.addCollection('allProjects', collection => {
+  config.addCollection('allProjects', collection => {
     return collection
       .getAllSorted()
       .filter(item => item.inputPath.match(/\/projects\//) !== null)
