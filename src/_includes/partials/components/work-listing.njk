@@ -1,0 +1,8 @@
+{%- for work in collections.featuredWork  %}
+  <div class="work-experience-item">
+    <h2>{{ work.data.role }}</h2>
+    <h3>{{ work.data.company }}, {{ work.data.timeframe }}</h3>
+    {{ work.templateContent | safe }}
+    <button class="primary-ghost">More information</button>
+  </div>
+{%- endfor %}

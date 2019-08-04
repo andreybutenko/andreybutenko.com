@@ -22,6 +22,14 @@ module.exports = function(config) {
   config.addPassthroughCopy('src/assets');
   // config.addPassthroughCopy('src/robots.txt');
 
+  config.addCollection('featuredWork', collection => {
+    return collection
+      .getAllSorted()
+      .filter(item => item.inputPath.match(/\/work\//) !== null)
+      .filter(item => item.data.featured)
+      .reverse();
+  });
+
   config.addCollection('projects', collection => {
     const projects = collection
       .getAllSorted()
