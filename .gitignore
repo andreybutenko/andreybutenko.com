@@ -16,3 +16,4 @@ pids
 *.pid.lock
 
 node_modules
+linkedin/config.js
