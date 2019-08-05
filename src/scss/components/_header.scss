@@ -1,3 +1,13 @@
+.header-clipped {
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+
+  .lateral-view {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
 @media screen and (max-width: 780px) {
   @keyframes header-slide-in {
     0% {

@@ -1,0 +1,39 @@
+---
+title: Work Experience
+permalink: work/index.html
+---
+{% extends 'layouts/base.njk' %}
+{% import 'partials/macros.njk' as macros %}
+
+{% block content %}
+{% call macros.generateHeader(pageTitle, 'header-clipped', 'container alt') %}
+  <p>
+    You can see my highlighted work experience <a href="/">on the home page</a>, or see my full work experience here.
+  </p>
+  <p>
+    Also take a look at <a href="/#projects">my projects</a>!
+  </p>
+  ----
+  <img src="/assets/andreyys-lowres.png" alt="Icon of Andrey" />
+{% endcall %}
+<div class="container work-page">
+  {%- for work in collections.work  %}
+    <article class="lateral-view">
+      <header class="lateral-secondary">
+        <img data-src="/assets/work/{{ work.data.image }}" class="lazyload" alt="{{ work.data.title }} icon" />
+      </header>
+      <div class="lateral-primary">
+        <h2>{{ work.data.role }}</h2>
+        <h3>{{ work.data.company }}, {{ work.data.timeframe }}</h3>
+        <section>
+          {{ work.templateContent | safe }}
+        </section>
+      </div>
+    </article>
+    {%- if loop.last %}
+    {%- else %}
+      <hr/>
+    {%- endif %}
+  {%- endfor %}
+</div>
+{% endblock content %}
