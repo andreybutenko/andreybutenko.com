@@ -7,7 +7,7 @@ role: Resident Adviser
 company: University of Washington Housing & Food Services
 timeframe: Sep 2018 - Jun 2019
 location: Seattle, Washington
-image: uwhfs.png
+image: uwwillow.png
 ---
 - Supporting community development in Willow Hall by developing relationships with a diverse community of 56 residents.
 - Provided personal and academic support to residents through programs and individual interactions.

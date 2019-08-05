@@ -7,7 +7,7 @@ role: Freelance Web Developer
 company: intern.community
 timeframe: Mar 2019 - Apr 2019
 location: Seattle, Washington
-image: freelance-19.png
+image: interncommunity.png
 ---
 [See the published website here.](https://interncommunity.com)
 

@@ -7,7 +7,7 @@ role: Android Developer and Research Assistant
 company: University of Washington College of Engineering
 timeframe: Nov 2017 - Aug 2018
 location: Seattle, Washington
-image: uwcoe.png
+image: uwcoe.jpg
 ---
 Developed an Android app which computes heart rate and blood oxygen content based on IR and red light data. Data is transmitted from a measurement device to the phone wirelessly via NFC.
 
