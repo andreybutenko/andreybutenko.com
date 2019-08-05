@@ -28,3 +28,11 @@ hr {
   height: 1px;
   background: linear-gradient(to left, transparent, #8c8b8b, transparent);
 }
+
+a {
+  color: #0984e3;
+
+  &:hover {
+    color: #74b9ff;
+  }
+}

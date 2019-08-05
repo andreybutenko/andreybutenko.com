@@ -1,6 +1,10 @@
-{% macro generateHeader(headerTitle) %}
-  <header class="header-dance dance-not-started dance-loading">
-    <div class="container lateral-view alt">
+{% macro generateHeader(headerTitle, headerClasses, lateralViewClasses, genericTag) %}
+  {%- if not genericTag %}
+    <header class="{{ headerClasses }}">
+  {%- else %}
+    <div class="{{ headerClasses }}">
+  {%- endif %}
+    <div class="lateral-view {{ lateralViewClasses }}">
       <div class="lateral-secondary">
         {{ caller().split('----')[1] | safe }}
       </div>
@@ -11,7 +15,11 @@
         {{ caller().split('----')[0] | safe }}
       </div>
     </div>
-  </header>
+  {%- if not genericTag %}
+    </header>
+  {%- else %}
+    </div>
+  {%- endif %}
 {% endmacro %}
 
 {% macro generateAnnouncement(classes) %}

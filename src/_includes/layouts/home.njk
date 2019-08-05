@@ -4,7 +4,7 @@
 
 {% block content %}
   <div id="preload-container" style="display: none;"></div>
-  {% call macros.generateHeader(pageTitle) %}
+  {% call macros.generateHeader(pageTitle, 'header-dance dance-not-started dance-loading', 'container alt') %}
     <p>
       I am a front-end developer studying Informatics at the University of Washington. I am skilled in developing web apps with Vue and mobile apps with React Native.
     </p>
@@ -38,6 +38,8 @@
   <div class="container">
     {% include 'partials/components/project-listing.njk' %}
   </div>
+
+  {% include 'partials/components/footer.njk' %}
 
   <script>
     // ### homepage animation ###
