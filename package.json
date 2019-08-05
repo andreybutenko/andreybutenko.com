@@ -4,8 +4,8 @@
   "description": "Andrey's 2019 portfolio website",
   "main": "index.js",
   "scripts": {
-    "serve": "gulp sass & concurrently \"gulp sass:watch\" \"gulp copyProjectAssets:watch\" \"eleventy --serve\"",
-    "build": "gulp sass & eleventy & gulp copyProjectAssets"
+    "serve": "gulp sass & concurrently \"gulp sass:watch\" \"gulp copyProjectAssets:watch\" \"gulp copyWorkAssets:watch\" \"eleventy --serve\"",
+    "build": "gulp sass & eleventy & gulp copyProjectAssets & gulp copyWorkAssets"
   },
   "repository": {
     "type": "git",

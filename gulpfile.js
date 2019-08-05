@@ -21,3 +21,12 @@ gulp.task('copyProjectAssets', () => {
 gulp.task('copyProjectAssets:watch', () => {
   gulp.watch('src/projects/*/*.{png,jpg,jpeg}', gulp.series('copyProjectAssets'));
 });
+
+gulp.task('copyWorkAssets', () => {
+  return gulp.src('src/work/img/*.{png,jpg,jpeg}')
+    .pipe(gulp.dest('_site/assets/work'));
+});
+
+gulp.task('copyWorkAssets:watch', () => {
+  gulp.watch('src/work/img/*.{png,jpg,jpeg}', gulp.series('copyWorkAssets'));
+});

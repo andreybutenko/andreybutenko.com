@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   background-color: transparent;
   padding: 0;
 
@@ -12,6 +13,18 @@
     margin-right: 0;
     background-color: white;
     flex: 0 0 calc(50% - 16px);
+
+    img {
+      max-width: 200px;
+      margin-bottom: 32px;
+    }
+
+    img,
+    button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     h2 {
       margin-top: 0;

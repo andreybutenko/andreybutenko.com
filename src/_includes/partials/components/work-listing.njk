@@ -1,5 +1,6 @@
-{%- for work in collections.featuredWork  %}
+{%- for work in collections.work  %}
   <div class="work-experience-item">
+    <img src="/assets/work/{{ work.data.image }}" alt="{{ work.data.company }} logo" />
     <h2>{{ work.data.role }}</h2>
     <h3>{{ work.data.company }}, {{ work.data.timeframe }}</h3>
     {{ work.templateContent | safe }}
