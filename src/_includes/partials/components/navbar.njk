@@ -1,0 +1,9 @@
+<nav>
+  <div class="container">
+    <ul>
+      {%- for page in nav %}
+        <li><a href="{{ page.url }}">{{ page.label }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Home",
+    "url": "/"
+  },
+  {
+    "label": "Projects",
+    "url": "/#projects"
+  },
+  {
+    "label": "Work Experience",
+    "url": "/work"
+  }
+]
