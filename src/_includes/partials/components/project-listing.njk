@@ -8,7 +8,7 @@
       <img data-src="/assets/{{ project.data.directory }}/{{ project.data.image }}" class="lazyload" alt="{{ project.data.title }} icon" />
     </header>
     <div class="lateral-primary">
-      <h2>{{ project.data.title }}</h2>
+      <h2><a href="{{ project.url }}" class="lowviz">{{ project.data.title }}</a></h2>
       <section>
         {{ project.templateContent | getPreview | safe }}
       </section>
