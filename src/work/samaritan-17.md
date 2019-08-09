@@ -8,6 +8,7 @@ company: Samaritan
 timeframe: Jun 2017 - Dec 2017
 location: Seattle, Washington
 image: samaritan-17.png
+slug: 2017/mobile-app-dev/samaritan
 ---
 Led development of a cross-platform, user-facing app. Worked on core features including beacon detection, payments, and growth strategies. Worked with designers and marketers to create specifications for new features, and collaborated frequently with other developers to plan and implement these features.
 

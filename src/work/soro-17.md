@@ -8,6 +8,7 @@ company: Soro
 timeframe: Aug 2017 - Oct 2017
 location: Seattle, Washington
 image: soro.png
+slug: 2017/webdev/soro
 ---
 Primarily worked with input, retrieval, and display of complex customer and inventory data using the Vue framework.
 

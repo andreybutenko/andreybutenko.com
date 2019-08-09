@@ -8,6 +8,7 @@ company: Samaritan
 timeframe: Jun 2016 - Aug 2016
 location: Seattle, Washington
 image: samaritan-16.png
+slug: 2016/mobile-app-dev/samaritan
 ---
 I developed Samaritan's native Android app from a skeleton to a launch-ready state. Worked with bluetooth beacons, payment processors, and other technologies.
 

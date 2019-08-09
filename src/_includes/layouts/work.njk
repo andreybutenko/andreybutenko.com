@@ -11,18 +11,12 @@
       {% endfor %}
     </ul>
     ----
-    <img data-src="/assets/{{ directory }}/{{ image }}" class="lazyload" alt="{{ title }} icon" />
+    <img data-src="/assets/work/{{ image }}" class="lazyload" alt="{{ title }} icon" />
   {% endcall %}
 
   <div class="container">
-    {{ content | getPreview | safe }}
+    {{ content | safe }}
   </div>
-  
-  {%- if content | getAntiPreview | trim | hasContent -%}
-    <div class="container">
-      {{ content | getAntiPreview | safe }}
-    </div>
-  {%- endif -%}
 
-  <a href="/#projects" class="button container primary big text-center">See more of my projects</a>
+  <a href="/work" class="button container primary big text-center">See more of my work experience</a>
 {% endblock %}

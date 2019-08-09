@@ -1,5 +1,5 @@
 ---
-title: Resident Adviser at University of Washington Housing & Food Services (Mar 2018 - May 2018)
+title: Resident Adviser at University of Washington Housing & Food Services (Sep 2018 - Jun 2019)
 date: 2018-09-01
 featured: false
 tags: work
@@ -8,6 +8,7 @@ company: University of Washington Housing & Food Services
 timeframe: Sep 2018 - Jun 2019
 location: Seattle, Washington
 image: uwwillow.png
+slug: 2018/reslife/willow
 ---
 - Supporting community development in Willow Hall by developing relationships with a diverse community of 56 residents.
 - Provided personal and academic support to residents through programs and individual interactions.

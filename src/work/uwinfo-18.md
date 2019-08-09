@@ -8,6 +8,7 @@ company: University of Washington Information School
 timeframe: Sep 2018 - Jun 2019
 location: Seattle, Washington
 image: uwinfo.png
+slug: 2018/teaching/info-201-ta
 ---
 TA for INFO 201: Technical Foundations of Informatics course.
 

@@ -1,4 +1,4 @@
 {
-  "layout": "project",
+  "layout": "work",
   "permalink": "work/{% if slug %}{{ slug }}{% else %}{{ title | slug }}{% endif %}/"
 }

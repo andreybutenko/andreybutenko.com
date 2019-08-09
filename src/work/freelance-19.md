@@ -8,6 +8,7 @@ company: intern.community
 timeframe: Mar 2019 - Apr 2019
 location: Seattle, Washington
 image: interncommunity.png
+slug: 2019/webdev/interncommunity
 ---
 [See the published website here.](https://interncommunity.com)
 

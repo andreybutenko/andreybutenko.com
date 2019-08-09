@@ -8,6 +8,7 @@ company: University of Washington
 timeframe: Mar 2018 - May 2018
 location: Seattle, Washington
 image: uw.png
+slug: 2018/teaching/info-201-tutor
 ---
 Supporting students in INFO 201: Technical Foundations of Informatics course. Running weekly homework help sessions for 25 students at a time as part of the University of Washington's CLUE program.
 

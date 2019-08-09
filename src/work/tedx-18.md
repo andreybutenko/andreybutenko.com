@@ -8,6 +8,7 @@ company: TEDxUofW
 timeframe: Nov 2018 - May 2019
 location: Seattle, Washington
 image: tedx-18.png
+slug: 2018/webdev/tedx
 ---
 [See the published website here.](https://tedxuofw.com)
 

@@ -18,6 +18,7 @@ module.exports = function(config) {
   config.addLayoutAlias('base', 'layouts/base.njk');
   config.addLayoutAlias('home', 'layouts/home.njk');
   config.addLayoutAlias('project', 'layouts/project.njk');
+  config.addLayoutAlias('work', 'layouts/work.njk');
 
   config.addPassthroughCopy('src/assets');
   // config.addPassthroughCopy('src/robots.txt');

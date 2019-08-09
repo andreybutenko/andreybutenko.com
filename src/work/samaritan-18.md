@@ -8,6 +8,7 @@ company: Samaritan
 timeframe: Jun 2018 - Aug 2018
 location: Seattle, Washington
 image: samaritan-18.png
+slug: 2018/mobile-app-dev/samaritan
 ---
 Implemented Samaritan's new design language throughout the app, including the onboarding sequence, main page, and checkout screen.
 
