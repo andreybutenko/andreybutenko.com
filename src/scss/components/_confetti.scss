@@ -11,7 +11,7 @@ $confetti-colors: (#3498db, #e74c3c, #9b59b6, #f1c40f);
   
   .confetti-#{$i} {
     position: absolute;
-    top: -64px;
+    top: -120px;
     left: $start-pos;
     background-color: nth($confetti-colors, random(4));
     width: #{$size / 2}px;

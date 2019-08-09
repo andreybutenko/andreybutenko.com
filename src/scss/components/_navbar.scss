@@ -1,10 +1,20 @@
 nav {
-  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
   overflow-x: scroll;
   white-space: nowrap;
+  transition: 250ms all;
+  z-index: 999;
 
   -ms-overflow-style: none;  // IE 10+
   scrollbar-width: none;  // Firefox
+
+  &:hover {
+    background-color: white;
+  }
 
   &::-webkit-scrollbar { 
     display: none;  // Safari and Chrome
