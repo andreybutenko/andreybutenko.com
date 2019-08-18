@@ -14,19 +14,19 @@ gulp.task('sass:watch', () => {
 });
 
 gulp.task('copyProjectAssets', () => {
-  return gulp.src('src/projects/*/*.{png,jpg,jpeg}')
+  return gulp.src('src/projects/*/*.{png,jpg,jpeg,gif}')
     .pipe(gulp.dest('_site/assets'));
 });
 
 gulp.task('copyProjectAssets:watch', () => {
-  gulp.watch('src/projects/*/*.{png,jpg,jpeg}', gulp.series('copyProjectAssets'));
+  gulp.watch('src/projects/*/*.{png,jpg,jpeg,gif}', gulp.series('copyProjectAssets'));
 });
 
 gulp.task('copyWorkAssets', () => {
-  return gulp.src('src/work/img/*.{png,jpg,jpeg}')
+  return gulp.src('src/work/img/*.{png,jpg,jpeg,gif}')
     .pipe(gulp.dest('_site/assets/work'));
 });
 
 gulp.task('copyWorkAssets:watch', () => {
-  gulp.watch('src/work/img/*.{png,jpg,jpeg}', gulp.series('copyWorkAssets'));
+  gulp.watch('src/work/img/*.{png,jpg,jpeg,gif}', gulp.series('copyWorkAssets'));
 });

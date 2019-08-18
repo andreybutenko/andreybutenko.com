@@ -25,6 +25,14 @@ p, li {
   }
 }
 
+p.show-image {
+  text-align: center;
+  
+  img {
+    max-width: 100%;
+  }
+}
+
 h1, h2 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2em;
