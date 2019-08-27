@@ -30,3 +30,8 @@ gulp.task('copyWorkAssets', () => {
 gulp.task('copyWorkAssets:watch', () => {
   gulp.watch('src/work/img/*.{png,jpg,jpeg,gif}', gulp.series('copyWorkAssets'));
 });
+
+gulp.task('copyFaviconAssets', () => {
+  return gulp.src('src/favicon/*.*')
+    .pipe(gulp.dest('_site'));
+});

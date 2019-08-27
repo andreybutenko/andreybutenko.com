@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "gulp sass & concurrently \"gulp sass:watch\" \"gulp copyProjectAssets:watch\" \"gulp copyWorkAssets:watch\" \"eleventy --serve\"",
-    "build": "gulp sass & eleventy & gulp copyProjectAssets & gulp copyWorkAssets"
+    "build": "gulp sass & eleventy & gulp copyProjectAssets & gulp copyWorkAssets & gulp copyFaviconAssets"
   },
   "repository": {
     "type": "git",
