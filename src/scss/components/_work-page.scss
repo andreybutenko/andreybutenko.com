@@ -1,12 +1,13 @@
 .work-page {
   .lateral-view {
     align-items: flex-start;
+    font-size: 18px;
 
     .lateral-secondary {
-      width: 300px;
+      width: 200px;
 
       img {
-        max-width: 250px;
+        max-width: 150px;
         margin-bottom: 16px;
       }
     }
