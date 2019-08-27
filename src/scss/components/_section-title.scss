@@ -9,6 +9,7 @@ h1.section-title {
 div.section-title {
   @extend .container;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background-color: transparent;
   margin-top: 1em;
