@@ -5,7 +5,7 @@ tags: projects
 image: clubkoala.png
 timeframe: Spring 2019
 links:
-- Play Club Koala, https//andrey.ninja/clubkoala
+- Play Club Koala, https://andrey.ninja/clubkoala
 - View GitHub, https://github.com/andreybutenko/club-koala
 - Watch Video Demo, https://www.youtube.com/watch?v=9ylSL7xEI30
 ---
