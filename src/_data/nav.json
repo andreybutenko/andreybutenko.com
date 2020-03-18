@@ -10,5 +10,9 @@
   {
     "label": "Work Experience",
     "url": "/work"
+  },
+  {
+    "label": "Now",
+    "url": "/now"
   }
 ]
