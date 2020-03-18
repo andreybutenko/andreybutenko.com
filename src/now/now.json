@@ -1,0 +1,4 @@
+{
+  "layout": "now",
+  "permalink": "now/{{ page.date | date: '%Y-%m-%d' }}/"
+}

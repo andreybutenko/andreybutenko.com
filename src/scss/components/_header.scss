@@ -12,6 +12,16 @@ body > header {
   }
 }
 
+.header-rect {
+  background-color: white;
+
+  .lateral-view {
+    margin-top: 0;
+    padding-top: 0;
+    align-items: flex-start !important;
+  }
+}
+
 @media screen and (max-width: 780px) {
   @keyframes header-slide-in {
     0% {

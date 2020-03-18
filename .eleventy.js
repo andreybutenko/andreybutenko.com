@@ -19,9 +19,17 @@ module.exports = function(config) {
   config.addLayoutAlias('home', 'layouts/home.njk');
   config.addLayoutAlias('project', 'layouts/project.njk');
   config.addLayoutAlias('work', 'layouts/work.njk');
+  config.addLayoutAlias('now', 'layouts/now.njk');
 
   config.addPassthroughCopy('src/assets');
   // config.addPassthroughCopy('src/robots.txt');
+
+  config.addCollection('now', collection => {
+    return collection
+      .getAllSorted()
+      .filter(item => item.inputPath.match(/\/now\//) !== null)
+      .reverse();
+  });
 
   config.addCollection('work', collection => {
     return collection

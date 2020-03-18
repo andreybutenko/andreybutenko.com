@@ -1,0 +1,38 @@
+---
+title: What am I doing now?
+permalink: now/index.html
+---
+{% extends 'layouts/base.njk' %}
+{% import 'partials/macros.njk' as macros %}
+
+{% block content %}
+{% call macros.generateHeader(pageTitle, 'header-rect', 'container alt') %}
+  <p><b>Last update: {{ collections.now[0].data.month }}</b></p>
+  {{ collections.now[0].templateContent | safe }}
+  ----
+  <img src="/assets/andreyys-lowres.png" alt="Icon of Andrey" />
+{% endcall %}
+
+<div class="container">
+  <h2 style="margin-top: 0;">About Andrey</h2>
+  <p>
+    I am a dedicated and ambitious Informatics student at the University of Washington. I am a skilled front-end web developer. Beyond code, I value understanding user needs and strive to create compelling and useful user experiences. I also love to teach and work with people!
+  </p>
+  <ul class="links-collection" style="justify-content: center; padding-left: 0;">
+    <li></li>
+    <li><a href="/#projects" target="_blank">Portfolio</a></li>
+    <li><a href="https://www.linkedin.com/in/butenkoandrey/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://github.com/andreybutenko/" target="_blank">GitHub</a></li>
+    <li><a href="mailto:andrey@andreybutenko.com">andrey@andreybutenko.com</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2 style="margin-top: 0;">Previous Updates</h2>
+  <ul>
+    {% for post in collections.now %}
+      <li><a href="{{ post.url }}" target="_blank">{{ post.data.month }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock content %}
