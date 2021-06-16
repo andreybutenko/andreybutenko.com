@@ -35,3 +35,7 @@ gulp.task('copyFaviconAssets', () => {
   return gulp.src('src/favicon/*.*')
     .pipe(gulp.dest('_site'));
 });
+
+gulp.task('sassAndAssets:watch', gulp.parallel('sass:watch', 'copyProjectAssets:watch', 'copyWorkAssets:watch'));
+
+gulp.task('setup', gulp.parallel('sass', 'copyProjectAssets', 'copyWorkAssets', 'copyFaviconAssets'));

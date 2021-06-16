@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/andreybutenko/andreybutenko.com#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.8.3",
     "concurrently": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3"
   }
 }
