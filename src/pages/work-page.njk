@@ -1,5 +1,5 @@
 ---
-title: Work Experience
+title: Work
 permalink: work/index.html
 ---
 {% extends 'layouts/base.njk' %}
@@ -18,10 +18,6 @@ permalink: work/index.html
 {% endcall %}
 
 <div class="container work-page" id="all-experience">
-  <div class="button-container">
-    <p>Currently viewing all work experience</p>
-    <button class="button big primary-ghost">See only featured experience</button>
-  </div>
   {%- for work in collections.work  %}
     <article class="lateral-view">
       <header class="lateral-secondary">
@@ -40,13 +36,13 @@ permalink: work/index.html
       <hr/>
     {%- endif %}
   {%- endfor %}
+  <div class="button-container">
+    <p>Currently viewing all work</p>
+    <button class="button big primary-ghost">See only software development work</button>
+  </div>
 </div>
 
 <div class="container work-page hidden" id="featured-experience">
-  <div class="button-container">
-    <p>Currently viewing featured work experience</p>
-    <button class="button big primary-ghost">See all experience</button>
-  </div>
   {%- for work in collections.featuredWork  %}
     <article class="lateral-view">
       <header class="lateral-secondary">
@@ -65,6 +61,10 @@ permalink: work/index.html
       <hr/>
     {%- endif %}
   {%- endfor %}
+  <div class="button-container">
+    <p>Currently viewing software development work</p>
+    <button class="button big primary-ghost">See all work</button>
+  </div>
 </div>
 
 <script>
@@ -80,6 +80,7 @@ permalink: work/index.html
     for(let i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener('click', toggleViews);
     }
+    toggleViews();
   });
 </script>
 {% endblock content %}

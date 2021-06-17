@@ -11,7 +11,5 @@ location: Seattle, Washington
 image: interncommunity.png
 slug: 2019/webdev/interncommunity
 ---
-[See the published website here.](https://interncommunity.com)
-
 - Implemented responsive front-end for the Intern Community website according to provided design specifications. 
 - Developed forms with input validation, error handling, and success states

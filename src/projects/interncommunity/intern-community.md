@@ -5,7 +5,6 @@ tags: projects
 image: interncommunity.png
 timeframe: Spring 2019
 links:
-- View interncommunity.com, https://interncommunity.com
 ---
 I was contracted to implement Sketch designs as a functional and responsive webpage for Intern Community that integrates with their existing backend.
 
