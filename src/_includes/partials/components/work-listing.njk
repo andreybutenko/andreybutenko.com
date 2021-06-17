@@ -1,9 +1,18 @@
-{%- for work in collections.featuredWork  %}
-  <div class="work-experience-item">
-    <img src="/assets/work/{{ work.data.image }}" alt="{{ work.data.company }} logo" />
-    <h2><a href="{{ work.url }}" class="lowviz">{{ work.data.role }}</a></h2>
-    <h3>{{ work.data.company }}, {{ work.data.timeframe }}</h3>
-    {{ work.templateContent | safe }}
-    <button class="primary-ghost">More information</button>
-  </div>
+{%- for work in collections.frontpageWork  %}
+  <article class="lateral-view">
+    <header class="lateral-secondary">
+      <img data-src="/assets/work/{{ work.data.image }}" class="lazyload" alt="{{ work.data.title }} icon" />
+    </header>
+    <div class="lateral-primary">
+      <h2><a href="{{ work.url }}" class="lowviz">{{ work.data.role }}</a></h2>
+      <h3>{{ work.data.company }}, {{ work.data.timeframe }}</h3>
+      <section>
+        {{ work.templateContent | safe }}
+      </section>
+    </div>
+  </article>
+  {%- if loop.last %}
+  {%- else %}
+    <hr/>
+  {%- endif %}
 {%- endfor %}

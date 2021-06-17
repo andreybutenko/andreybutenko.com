@@ -2,6 +2,7 @@
 title: Front-End Web Developer at TEDxUofW (Nov 2018 - May 2019)
 date: 2018-11-01
 featured: false
+frontpage: false
 tags: work
 role: Front-End Web Developer
 company: TEDxUofW

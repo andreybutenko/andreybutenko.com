@@ -2,6 +2,7 @@
 title: Android Developer and Research Assistant at University of Washington College of Engineering (Nov 2017 - Aug 2018)
 date: 2017-11-01
 featured: false
+frontpage: false
 tags: work
 role: Android Developer and Research Assistant
 company: University of Washington College of Engineering

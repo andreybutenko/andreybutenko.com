@@ -114,30 +114,8 @@
       });
     }
 
-    // ### homepage work experience ###
-
-    const EXPAND_TEXT = 'More information';
-    const MINIMIZE_TEXT = 'Minimize information';
-
-    function onLoadWorkExperience() {
-      const items = document.querySelectorAll('.work-experience-item');
-      const buttons = document.querySelectorAll('.work-experience-item button');
-
-      for(let i = 0; i < items.length; i++) {
-        items[i].classList.add('minimized');
-      }
-
-      for(let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', e => {
-          e.target.parentElement.classList.toggle('minimized');
-          e.target.innerText = e.target.innerText == EXPAND_TEXT ? MINIMIZE_TEXT : EXPAND_TEXT;
-        });
-      }
-    }
-
     window.addEventListener('load', () => {
       onLoadAnimation();
-      onLoadWorkExperience();
     });
   </script>
 {% endblock %}

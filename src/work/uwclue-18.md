@@ -2,6 +2,7 @@
 title: R Tutor (INFO 201) at University of Washington (Mar 2018 - May 2018)
 date: 2018-03-01
 featured: false
+frontpage: false
 tags: work
 role: R Tutor (INFO 201)
 company: University of Washington

@@ -19,6 +19,7 @@ module.exports = function(config) {
   config.addLayoutAlias('home', 'layouts/home.njk');
   config.addLayoutAlias('project', 'layouts/project.njk');
   config.addLayoutAlias('work', 'layouts/work.njk');
+  config.addLayoutAlias('redirect', 'layouts/redirect.njk');
   config.addLayoutAlias('now', 'layouts/now.njk');
 
   config.addPassthroughCopy('src/assets');
@@ -46,6 +47,14 @@ module.exports = function(config) {
       .reverse();
   });
 
+  config.addCollection('frontpageWork', collection => {
+    return collection
+      .getAllSorted()
+      .filter(item => item.inputPath.match(/\/work\//) !== null)
+      .filter(item => item.data.frontpage)
+      .reverse();
+  });
+
   config.addCollection('projects', collection => {
     const projects = collection
       .getAllSorted()
@@ -59,6 +68,13 @@ module.exports = function(config) {
     return collection
       .getAllSorted()
       .filter(item => item.inputPath.match(/\/projects\//) !== null)
+      .reverse();
+  });
+
+  config.addCollection('redirects', collection => {
+    return collection
+      .getAllSorted()
+      .filter(item => item.inputPath.match(/\/redirects\//) !== null)
       .reverse();
   });
 

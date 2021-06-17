@@ -2,6 +2,7 @@
 title: R Teaching Assistant (INFO 201) at University of Washington Information School (Sep 2018 - Jun 2019)
 date: 2018-09-01
 featured: false
+frontpage: false
 tags: work
 role: R Teaching Assistant (INFO 201)
 company: University of Washington Information School

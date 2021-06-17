@@ -2,6 +2,7 @@
 title: Front-End Web Developer (Aug 2017 - Oct 2017)
 date: 2017-08-01
 featured: true
+frontpage: false
 tags: work
 role: Front-End Web Developer
 company: Soro
